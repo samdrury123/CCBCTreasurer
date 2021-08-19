@@ -1,0 +1,437 @@
+﻿.PrintColorReportTopText
+{
+	font-size:30px ;
+	font-weight:bold;
+	padding:0px;
+	font-align:left;
+}
+.PageTitleText
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size:larger;
+	font-weight:bold ;
+	padding-top:3px;
+	padding-bottom:3px;
+	width:640px;
+	background-color:White;
+	float:left;
+}
+.SectionHolder
+{
+	width:640px;
+	padding-bottom:10px;
+	clear:both;
+}
+.MidSectionHolder
+{
+	width:640px;
+	padding-bottom:5px;
+}
+.PrintColorReportContentText
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size:smaller ;
+	text-transform:uppercase; 
+}
+
+
+.PrintColorReportCaptionMain
+{
+    font-family: arial, helvetica, sans-serif;
+    font-size:inherit;
+    font-weight:bold ;
+    color:Black;
+
+}
+
+.PrintColorReportCaptionSub
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size:smaller ;
+	font-weight:bold ;
+	
+}
+
+
+.PrintColorReportCaptionText
+{
+	
+	font-family: arial, helvetica, sans-serif;
+	font-size:small ;
+	word-wrap:break-word;
+}
+
+
+.GridHeading
+{
+	padding : 5px;
+	text-align:left;
+	border-color:Black;
+	border-style :solid ;
+	border-width :1px;
+}
+.GridColumnNumeric
+{
+	padding : 5px;
+	text-align:right;
+	background-color : White;
+	border-color:Black;
+	border-style :solid ;
+	border-width :1px;
+}
+.GridColumnText
+{
+	padding : 5px;
+	text-align:left;
+	border-color:Black;
+	border-style :solid ;
+	border-width :1px;
+	background-color : White;
+}
+
+/* Charts */
+
+.ucTitle, .ucTitleLeftNav
+{
+	font-weight:bold;
+	font-family: arial, helvetica, sans-serif;
+	font-size:small; 
+	color:Black;
+	
+}
+	
+div.ChartsFullWidthContainer
+{
+	float:left; 
+	width:650px; /*678px;*/
+	padding-bottom:10px;
+}
+
+div.ChartsFullWidthContainer1
+{
+	float:left; 
+	width:6px; /*678px;*/
+	padding-bottom:10px;
+}
+
+div.ChartContainerLeft, div.ChartContainerRight
+{
+	float:left;
+	width:320px;
+	
+	
+	/*border-top:solid 1px red;*/
+}
+div.ChartContainerLeft
+{
+	margin-right:-5px;
+}
+div.ChartContainerRight
+{
+	margin-left:-5px;
+}
+div#ChartsIncome, div#ChartsSpending, div#ChartsAssetsLiabilitiesAndPeople, div#ChartsCharitableSpending, div#ChartsFinancialHistory, div#ChartsComplianceHistory
+{
+	float:left; 
+	width:325px; 
+	margin-right:0px; 
+	background-color:white;	
+	/*overflow:scroll;*/
+	/*
+	border-bottom:solid 1px red;
+	border-top:solid 1px red;*/
+}
+div.ChartIndividual
+{
+	float:left; 
+	width:155px;    
+	
+	/*overflow:scroll;*/
+}
+div.ChartIndividualWide
+{
+	float:left; 
+	width:325px;
+}
+div.ChartTableCombineWide
+{
+	float:left; 
+	width:640px;
+}
+
+.PrintColorReportCaptionSub
+{
+	font-size:smaller ;
+	font-weight:bold ;
+	
+}
+
+.ChartTable th.Numeric, .ChartTable td.Numeric
+{
+	text-align:right;
+		font-size:smaller ;
+		
+}
+
+img.People
+{
+	margin:0px 0px;
+}
+
+
+.ChartTable td, .ChartTable th, .ChartTable th.Numeric, .ChartTable td.Numeric
+{
+	padding:4px 2px;
+	font-size:95%;
+}
+.ChartTable th.Numeric, .ChartTable td.Numeric
+{
+	text-align:right;
+}
+.ChartTable
+{
+	border:none;
+	width:300px;
+}
+
+/* END Charts */
+
+/* Status bar */
+div#StatusContainerGreen, div#StatusContainerRed, div#StatusContainerBlue
+{
+	width:640px;/*678px;*/
+}
+
+div#StatusContainerGreen div.RoundedCornerContainer, div#StatusContainerRed div.RoundedCornerContainer, div#StatusContainerBlue div.RoundedCornerContainer
+{
+  /*background-color: #FFFFFF;*/
+  width:640px;/*678px;*/
+  float:left;
+}
+div#StatusContainerBlue div.RoundedCornerContainer
+{
+  color: black;
+}
+div#StatusContainerGreen div.RoundedCornerContainer
+{
+  color: black;
+}
+div#StatusContainerRed div.RoundedCornerContainer
+{
+  color: black;
+}
+div#StatusContainerBlue div.RoundedCorner1, div#StatusContainerBlue div.RoundedCorner2,
+div#StatusContainerBlue div.RoundedCorner3, div#StatusContainerBlue div.RoundedCorner4,
+div#StatusContainerGreen div.RoundedCorner1, div#StatusContainerGreen div.RoundedCorner2,
+div#StatusContainerGreen div.RoundedCorner3, div#StatusContainerGreen div.RoundedCorner4,
+div#StatusContainerRed div.RoundedCorner1, div#StatusContainerRed div.RoundedCorner2,
+div#StatusContainerRed div.RoundedCorner3, div#StatusContainerRed div.RoundedCorner4 
+{
+  color: black;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+}
+div#StatusContainerBlue div.RoundedCorner1, div#StatusContainerBlue div.RoundedCorner2,
+div#StatusContainerBlue div.RoundedCorner3, div#StatusContainerBlue div.RoundedCorner4
+{
+  background-color: black;
+}
+div#StatusContainerGreen div.RoundedCorner1, div#StatusContainerGreen div.RoundedCorner2,
+div#StatusContainerGreen div.RoundedCorner3, div#StatusContainerGreen div.RoundedCorner4
+{
+  background-color: black;
+}
+div#StatusContainerRed div.RoundedCorner1, div#StatusContainerRed div.RoundedCorner2,
+div#StatusContainerRed div.RoundedCorner3, div#StatusContainerRed div.RoundedCorner4 
+{
+  background-color: black;
+}
+div.RoundedCorner1 
+{
+  margin: 0 5px;
+}
+div.RoundedCorner2 
+{
+  margin: 0 3px;
+}
+div.RoundedCorner3 
+{
+  margin: 0 2px;
+}
+div.RoundedCorner4 
+{
+  margin: 0 1px;
+  height: 2px;
+}
+div.Charity
+{
+    float:left; 
+    width:464px;/*500px; */
+    font-weight:bold;
+    padding-left:4px;
+    height:2.5em;
+}
+div.Charity div.StatusCharityNo
+{
+    float:left; 
+    width:60px;
+    font-size:small ;
+}
+div.Charity div.StatusCharityName
+{
+    float:left; 
+    width:400px;
+    font-size:small ;
+}
+div#StatusContainerGreen div.Legend, div#StatusContainerRed div.Legend, div#StatusContainerBlue div.Legend
+{
+    width:150px;/*162px; */
+    color:black; 
+    float:left; 
+    text-align:center; 
+    text-transform:uppercase; 
+    font-weight:bold;
+    padding:0px 4px;
+    height:3.0em;
+    font-size:small ;
+}
+div#StatusContainerBlue div.Legend
+{
+    background-color:White ; 
+    border-right:solid 4px black; 
+    border-left:solid 4px black; 
+}
+div#StatusContainerGreen div.Legend
+{
+    background-color:White ; 
+    border-right:solid 4px black; 
+    border-left:solid 4px black; 
+}
+div#StatusContainerRed div.Legend
+{
+    background-color:White; 
+    border-right:solid 4px black; 
+    border-left:solid 4px black; 
+}
+div#StatusContainerBlue div.LeftBarPadder
+{
+    width:4px;
+    float:left; 
+    padding:0px;
+    height:3.0em;
+    font-size:small ;   
+    background-color:black; 
+}
+div#StatusContainerGreen div.LeftBarPadder
+{
+    width:4px;
+    float:left; 
+    padding:0px;
+    height:3.0em;
+    font-size:small ;   
+    background-color:black; 
+}
+div#StatusContainerRed div.LeftBarPadder
+{
+    width:4px;
+    float:left; 
+    padding:0px;
+    height:3.0em;
+    font-size:small ;   
+    background-color:black; 
+    
+}
+
+
+div#StatusContainerGreen div.StatusTextContainer, div#StatusContainerRed div.StatusTextContainer, div#StatusContainerBlue div.StatusTextContainer
+{
+    background-color:white; 
+    /*border-left:solid 4px black; */
+    width:639px;/*674px; */
+    float:left; 
+    vertical-align:middle;
+}
+div#StatusContainerBlue div.StatusTextContainer
+{
+    /*border-left:solid 4px black; */
+ }
+div#StatusContainerGreen div.StatusTextContainer
+{
+    /*border-left:solid 4px black; */
+ }
+div#StatusContainerRed div.StatusTextContainer
+{
+    /*border-left:solid 4px black; */
+ }
+div#StatusContainerGreen div.StatusMessage, div#StatusContainerRed div.StatusMessage, div#StatusContainerBlue div.StatusMessage,
+div#StatusMessageContainerGreen, div#StatusMessageContainerRed, div#StatusMessageContainerBlue
+{
+    width:151px;/*154px; */
+    background-color:white; 
+    color:black; 
+    float:right; 
+    padding:4px 4px; 
+    height:135px;/*11em;*/
+    font-size:small ;
+}
+div#StatusContainerBlue div.StatusMessage, div#StatusMessageContainerBlue
+{
+    border-right:solid 4px black; 
+    border-bottom:solid 4px black; 
+    border-left:solid 4px black;
+}
+div#StatusContainerGreen div.StatusMessage, div#StatusMessageContainerGreen
+{
+    border-right:solid 4px black; 
+    border-bottom:solid 4px black; 
+    border-left:solid 4px black;
+}
+div#StatusContainerRed div.StatusMessage, div#StatusMessageContainerRed
+{
+    border-right:solid 4px black; 
+    border-bottom:solid 4px black; 
+    border-left:solid 4px black;
+}
+
+
+div#DisplayAndStatusMessageContainer
+{
+	float:left; 
+	width:640px;
+}
+div#DisplayAndStatusMessageContainer div.DisplayContainer
+{
+	float:left; 
+	width:462px; 
+	padding-top:4px;
+}
+
+/* END Status bar */
+
+.ClassificationTitles
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size:smaller ;
+	font-weight:bold ;
+	padding-left:20px;
+}
+.ClassificationText
+{
+	font-family: arial, helvetica, sans-serif;
+	font-size:smaller ;
+	text-transform:uppercase; 
+	padding-left:40px;
+	word-wrap:break-word;
+}
+.REGHISTORYTABLE tr td
+{
+	padding: 5px 20px 0px 0px;
+	text-transform:none;
+}
+
+.REGHISTORYTABLE .DATECOLUMN
+{
+	white-space: nowrap;
+	vertical-align: top;
+}

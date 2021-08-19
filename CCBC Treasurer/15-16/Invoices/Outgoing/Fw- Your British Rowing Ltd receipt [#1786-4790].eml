@@ -1,0 +1,1283 @@
+Return-Path: <katehurst@yahoo.com>
+Received: from ppsw-32.csi.cam.ac.uk (ppsw-32-intramail.csi.cam.ac.uk [192.168.128.132])
+	 by cyrus-1b.csi.private.cam.ac.uk (Cyrus v2.4.17) with LMTPA;
+	 Thu, 04 Feb 2016 17:46:14 +0000
+X-Sieve: CMU Sieve 2.4
+X-Cam-SpamDetails: score -1.1 from SpamAssassin-3.3.2-1728272 
+ * -0.7 RCVD_IN_DNSWL_LOW RBL: Sender listed at http://www.dnswl.org/, low
+ *      trust
+ *      [72.30.238.197 listed in list.dnswl.dnsbl.ja.net]
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *       (katehurst[at]yahoo.com)
+ * -0.5 RP_MATCHES_RCVD Envelope sender domain matches handover relay
+ *      domain
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ *  0.0 T_REMOTE_IMAGE Message contains an external image
+X-Cam-ScannerInfo: http://www.ucs.cam.ac.uk/email/scanner/
+Received: from nm35.bullet.mail.bf1.yahoo.com ([72.30.238.197]:58495)
+	by ppsw-32.csi.cam.ac.uk (mx.cam.ac.uk [131.111.8.146]:25)
+	with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	id 1aRNyv-000j3T-0s (Exim 4.86_36-e07b163) for atc33@cam.ac.uk
+	(return-path <katehurst@yahoo.com>); Thu, 04 Feb 2016 17:46:14 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1454607972; bh=yqzJHxXViFFttA3s1RbJWjaaHLEmcuaMjHuOhiSOERM=; h=Date:From:Reply-To:To:In-Reply-To:References:Subject:From:Subject; b=n4w3w1ebJhMuDSgkcQE8QyFbZuClmQR49gQO+oC0Ktd1ggNptTfGZsKdl6Zq3t4ieWRcvupOL8jTiSDJF0Ciu/UPSuJp8by4PmSFrhAEis8xW0XwIB4hfIEgt9mYnFPbXHk78Rj80xa0fbskjQXCY2v2R9RU7DM87YRyvt/J8CjNdRFqhaqNzxuWj9oYOLMRZQcOBNOIMNHXz0Nt1oSV1wMyQMg9PylJ1s5+HV67gfOuTT6KVGNSPwUg+gBN/mqH3e8LKnUqziaOQcmqBrFQOZ7jUBvw2jJgqyXpdvSvPufxutTFMAmTlgOi8u1oJ0NA1m5YQCANLTOZfvOLCPVm9g==
+Received: from [98.139.170.178] by nm35.bullet.mail.bf1.yahoo.com with NNFMP; 04 Feb 2016 17:46:12 -0000
+Received: from [98.139.212.229] by tm21.bullet.mail.bf1.yahoo.com with NNFMP; 04 Feb 2016 17:46:12 -0000
+Received: from [127.0.0.1] by omp1038.mail.bf1.yahoo.com with NNFMP; 04 Feb 2016 17:46:12 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 215660.5807.bm@omp1038.mail.bf1.yahoo.com
+X-YMail-OSG: GjvyE6QVM1mKflQV_yLab23sKh00KwKnnkg8VTaRSm.MjWnLY3hdVkHdpiyapdb
+ 91sTsQHAOVPUML1FAJ.7n6wempAMBMAtDXQlKiDokwvpTIk1VjDkLQTltL21JJLd5rUvXHPhqumZ
+ mbriwnqlrBxQizdiUR6lIAa9YSiuOZAIXaIhdaqmWhXQyn.RVBINnDHixDNaXDDi5B9x01Oa2oX3
+ M9LrvHxeZfUq20SNzFEaXPJ6JGkrwsbTVmrBZuiP1c_5YsACBBJRMIEH8s0gIq3R58FcIaqRn1PS
+ 6L36iZCoY.oWCqUL0JzDZu0w5TEriEY1E5mFhcdMZS6c7cS_KYRk5r.7waHTpWeYFY8vRG.eqlB8
+ tRGStmXAGxBZCpttnYYMebZVki5NQphUYU7g8ueRJB5VTqRGxQKOSwdVUZPH57h6K6uoA2SoLIvv
+ WA8aiWYpsW6lEF64Z5InGSaRFc89Ca79nJxipbn3bJ5OqOeDw3cfJpz4Jr4W6IV5Xn7rPJnXPtcR
+ 8pqVILu1wc66EJmzP3wBOnZpN0YQ-
+Received: by 76.13.27.196; Thu, 04 Feb 2016 17:46:11 +0000 
+Date: Thu, 4 Feb 2016 17:46:11 +0000 (UTC)
+From: Kate Hurst <katehurst@yahoo.com>
+Reply-To: Kate Hurst <katehurst@yahoo.com>
+To: "atc33@cam.ac.uk" <atc33@cam.ac.uk>
+Message-ID: <1115127364.1883080.1454607971341.JavaMail.yahoo@mail.yahoo.com>
+In-Reply-To: <56b38d80becc2_f253a55334392f7@hurricane12.northwest.stripe.io.mail>
+References: <56b38d80becc2_f253a55334392f7@hurricane12.northwest.stripe.io.mail>
+Subject: Fw: Your British Rowing Ltd receipt [#1786-4790]
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1883079_1985082588.1454607971324"
+Content-Length: 56881
+
+------=_Part_1883079_1985082588.1454607971324
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hi Andy,
+Found out today that my BR membership needs to be up to date for my coachin=
+g insurance and as Water Safety officer - so have renewed it on club card
+
+K
+
+
+     On Thursday, 4 February 2016, 17:42, British Rowing Ltd <receipts+jnL8=
+yfY6W1EqUs5WlvLJ@stripe.com> wrote:
+=20
+
+  Your British Rowing Ltd receipt [#1786-4790]#yiv3239832556 a {text-decora=
+tion:none;}#yiv3239832556 #yiv3239832556 span.yiv3239832556apple-override-h=
+eader a {color:#000000;text-decoration:none;}#yiv3239832556 span.yiv3239832=
+556apple-override-hidden a {color:#ffffff;text-decoration:none;}#yiv3239832=
+556 span.yiv3239832556apple-override-dark a {color:#292e31;text-decoration:=
+none;}#yiv3239832556 span.yiv3239832556apple-override-light a {color:#77858=
+c;text-decoration:none;}#yiv3239832556 #yiv3239832556 @media ( _filtered_a =
+)(){#yiv3239832556 body .filtered99999 span.yiv3239832556retina img {visibi=
+lity:hidden;}#yiv3239832556 body .filtered99999 td.yiv3239832556icon span.y=
+iv3239832556retina {background:no-repeat 0 0 !important;background-size:72p=
+x 72px !important;display:block;height:72px !important;width:72px !importan=
+t;}#yiv3239832556 body .filtered99999 table.yiv3239832556card td.yiv3239832=
+556card-type span.yiv3239832556retina {display:block;height:16px !important=
+;}#yiv3239832556 #yiv3239832556 body .filtered99999 table.yiv3239832556card=
+-default td.yiv3239832556card-type span.yiv3239832556retina {background:no-=
+repeat 0 0 !important;background-size:22px 16px !important;width:22px !impo=
+rtant;}#yiv3239832556 body .filtered99999 table.yiv3239832556card-default t=
+r.yiv3239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina=
+ {background:no-repeat 0 0 !important;background-size:22px 16px !important;=
+width:22px !important;}#yiv3239832556 #yiv3239832556 body .filtered99999 ta=
+ble.yiv3239832556card-visa td.yiv3239832556card-type span.yiv3239832556reti=
+na {background:no-repeat 0 0 !important;background-size:36px 16px !importan=
+t;width:36px !important;}#yiv3239832556 body .filtered99999 table.yiv323983=
+2556card-visa tr.yiv3239832556card-dark td.yiv3239832556card-type span.yiv3=
+239832556retina {background:no-repeat 0 0 !important;background-size:36px 1=
+6px !important;width:36px !important;}#yiv3239832556 #yiv3239832556 body .f=
+iltered99999 table.yiv3239832556card-mastercard td.yiv3239832556card-type s=
+pan.yiv3239832556retina {background:no-repeat 0 0 !important;background-siz=
+e:75px 16px !important;width:75px !important;}#yiv3239832556 body .filtered=
+99999 table.yiv3239832556card-mastercard tr.yiv3239832556card-dark td.yiv32=
+39832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !impor=
+tant;background-size:75px 16px !important;width:75px !important;}#yiv323983=
+2556 #yiv3239832556 body .filtered99999 table.yiv3239832556card-amex td.yiv=
+3239832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !imp=
+ortant;background-size:45px 16px !important;width:45px !important;}#yiv3239=
+832556 body .filtered99999 table.yiv3239832556card-amex tr.yiv3239832556car=
+d-dark td.yiv3239832556card-type span.yiv3239832556retina {background:no-re=
+peat 0 0 !important;background-size:45px 16px !important;width:45px !import=
+ant;}#yiv3239832556 #yiv3239832556 body .filtered99999 table.yiv3239832556c=
+ard-discover td.yiv3239832556card-type span.yiv3239832556retina {background=
+:no-repeat 0 0 !important;background-size:57px 16px !important;width:57px !=
+important;}#yiv3239832556 body .filtered99999 table.yiv3239832556card-disco=
+ver tr.yiv3239832556card-dark td.yiv3239832556card-type span.yiv3239832556r=
+etina {background:no-repeat 0 0 !important;background-size:57px 16px !impor=
+tant;width:57px !important;}#yiv3239832556 #yiv3239832556 body .filtered999=
+99 table.yiv3239832556card-jcb td.yiv3239832556card-type span.yiv3239832556=
+retina {background:no-repeat 0 0 !important;background-size:19px 16px !impo=
+rtant;width:19px !important;}#yiv3239832556 body .filtered99999 table.yiv32=
+39832556card-jcb tr.yiv3239832556card-dark td.yiv3239832556card-type span.y=
+iv3239832556retina {background:no-repeat 0 0 !important;background-size:19p=
+x 16px !important;width:19px !important;}#yiv3239832556 #yiv3239832556 body=
+ .filtered99999 table.yiv3239832556card-diners td.yiv3239832556card-type sp=
+an.yiv3239832556retina {background:no-repeat 0 0 !important;background-size=
+:20px 16px !important;width:20px !important;}#yiv3239832556 body .filtered9=
+9999 table.yiv3239832556card-diners tr.yiv3239832556card-dark td.yiv3239832=
+556card-type span.yiv3239832556retina {background:no-repeat 0 0 !important;=
+background-size:20px 16px !important;width:20px !important;}}#yiv3239832556=
+ @media and ( _filtered_a ){#yiv3239832556 body .filtered99999 span.yiv3239=
+832556retina img {visibility:hidden;}#yiv3239832556 body .filtered99999 td.=
+yiv3239832556font-large, #yiv3239832556 body .filtered99999 td.yiv323983255=
+6font-large span, #yiv3239832556 body .filtered99999 td.yiv3239832556font-l=
+arge a {font-size:18px !important;line-height:25px !important;}#yiv32398325=
+56 body .filtered99999 td.yiv3239832556font-medium, #yiv3239832556 body .fi=
+ltered99999 td.yiv3239832556font-medium span, #yiv3239832556 body .filtered=
+99999 td.yiv3239832556font-medium a {font-size:16px !important;line-height:=
+23px !important;}#yiv3239832556 body .filtered99999 td.yiv3239832556font-sm=
+all, #yiv3239832556 body .filtered99999 td.yiv3239832556font-small span, #y=
+iv3239832556 body .filtered99999 td.yiv3239832556font-small a {font-size:15=
+px !important;line-height:21px !important;}#yiv3239832556 body .filtered999=
+99 td.yiv3239832556icon span.yiv3239832556retina {background:no-repeat 0 0 =
+!important;background-size:72px 72px !important;display:block;height:72px !=
+important;width:72px !important;}#yiv3239832556 body .filtered99999 td.yiv3=
+239832556title, #yiv3239832556 body .filtered99999 td.yiv3239832556title sp=
+an, #yiv3239832556 body .filtered99999 td.yiv3239832556title a {font-size:2=
+4px !important;line-height:28px !important;}#yiv3239832556 body .filtered99=
+999 table.yiv3239832556card td.yiv3239832556card-type span.yiv3239832556ret=
+ina {display:block;height:19px !important;}#yiv3239832556 #yiv3239832556 bo=
+dy .filtered99999 table.yiv3239832556card-default td.yiv3239832556card-type=
+ span.yiv3239832556retina {background:no-repeat 0 0 !important;background-s=
+ize:25px 19px !important;width:25px !important;}#yiv3239832556 body .filter=
+ed99999 table.yiv3239832556card-default tr.yiv3239832556card-dark td.yiv323=
+9832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !import=
+ant;background-size:25px 19px !important;width:25px !important;}#yiv3239832=
+556 #yiv3239832556 body .filtered99999 table.yiv3239832556card-visa td.yiv3=
+239832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !impo=
+rtant;background-size:43px 19px !important;width:43px !important;}#yiv32398=
+32556 body .filtered99999 table.yiv3239832556card-visa tr.yiv3239832556card=
+-dark td.yiv3239832556card-type span.yiv3239832556retina {background:no-rep=
+eat 0 0 !important;background-size:43px 19px !important;width:43px !importa=
+nt;}#yiv3239832556 #yiv3239832556 body .filtered99999 table.yiv3239832556ca=
+rd-mastercard td.yiv3239832556card-type span.yiv3239832556retina {backgroun=
+d:no-repeat 0 0 !important;background-size:87px 19px !important;width:87px =
+!important;}#yiv3239832556 body .filtered99999 table.yiv3239832556card-mast=
+ercard tr.yiv3239832556card-dark td.yiv3239832556card-type span.yiv32398325=
+56retina {background:no-repeat 0 0 !important;background-size:87px 19px !im=
+portant;width:87px !important;}#yiv3239832556 #yiv3239832556 body .filtered=
+99999 table.yiv3239832556card-amex td.yiv3239832556card-type span.yiv323983=
+2556retina {background:no-repeat 0 0 !important;background-size:53px 19px !=
+important;width:53px !important;}#yiv3239832556 body .filtered99999 table.y=
+iv3239832556card-amex tr.yiv3239832556card-dark td.yiv3239832556card-type s=
+pan.yiv3239832556retina {background:no-repeat 0 0 !important;background-siz=
+e:53px 19px !important;width:53px !important;}#yiv3239832556 #yiv3239832556=
+ body .filtered99999 table.yiv3239832556card-discover td.yiv3239832556card-=
+type span.yiv3239832556retina {background:no-repeat 0 0 !important;backgrou=
+nd-size:70px 19px !important;width:70px !important;}#yiv3239832556 body .fi=
+ltered99999 table.yiv3239832556card-discover tr.yiv3239832556card-dark td.y=
+iv3239832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !i=
+mportant;background-size:70px 19px !important;width:70px !important;}#yiv32=
+39832556 #yiv3239832556 body .filtered99999 table.yiv3239832556card-jcb td.=
+yiv3239832556card-type span.yiv3239832556retina {background:no-repeat 0 0 !=
+important;background-size:22px 19px !important;width:22px !important;}#yiv3=
+239832556 body .filtered99999 table.yiv3239832556card-jcb tr.yiv3239832556c=
+ard-dark td.yiv3239832556card-type span.yiv3239832556retina {background:no-=
+repeat 0 0 !important;background-size:22px 19px !important;width:22px !impo=
+rtant;}#yiv3239832556 #yiv3239832556 body .filtered99999 table.yiv323983255=
+6card-diners td.yiv3239832556card-type span.yiv3239832556retina {background=
+:no-repeat 0 0 !important;background-size:23px 19px !important;width:23px !=
+important;}#yiv3239832556 body .filtered99999 table.yiv3239832556card-diner=
+s tr.yiv3239832556card-dark td.yiv3239832556card-type span.yiv3239832556ret=
+ina {background:no-repeat 0 0 !important;background-size:23px 19px !importa=
+nt;width:23px !important;}#yiv3239832556 #yiv3239832556 body .filtered99999=
+ table.yiv3239832556card td.yiv3239832556card-digits, #yiv3239832556 body .=
+filtered99999 table.yiv3239832556card td.yiv3239832556card-digits span {fon=
+t-size:16px !important;line-height:16px !important;}#yiv3239832556 body .fi=
+ltered99999 td.yiv3239832556summary-total {font-size:20px !important;line-h=
+eight:25px !important;}}#yiv3239832556 @media and ( _filtered_a ){#yiv32398=
+32556 body .filtered99999 table.yiv3239832556width, #yiv3239832556 body .fi=
+ltered99999 td.yiv3239832556width {width:100% !important;}#yiv3239832556 bo=
+dy .filtered99999 td.yiv3239832556temp-padding, #yiv3239832556 body .filter=
+ed99999 td.yiv3239832556temp-padding div.yiv3239832556clear {display:none;w=
+idth:0 !important;}#yiv3239832556 body .filtered99999 td.yiv3239832556banne=
+r {height:186px !important;}#yiv3239832556 body .filtered99999 td.yiv323983=
+2556subbanner-item {display:block;padding-left:10px !important;padding-righ=
+t:10px !important;text-align:center;width:100% !important;}#yiv3239832556 b=
+ody .filtered99999 tr.yiv3239832556summary-item td.yiv3239832556summary-pad=
+ding, #yiv3239832556 body .filtered99999 tr.yiv3239832556summary-item td.yi=
+v3239832556summary-padding div.yiv3239832556clear {width:17px !important;}#=
+yiv3239832556 body .filtered99999 a.yiv3239832556browser-link {display:bloc=
+k;}}=20
+| =20
+| =20
+| =20
+|  Thanks for your =C2=A354.50 payment to British Rowing Ltd.  |
+
+  |
+
+=20
+|  =C2=A0  |
+| =20
+|    | =20
+|        |
+|  =C2=A0  |
+|  =C2=A354.50=C2=A0at=C2=A0British Rowing Ltd  |
+|  =C2=A0  |
+| =20
+|  =C2=A0  |
+
+  |
+|  =C2=A0  |
+| =20
+|      |  =C2=A0  |  9014  |
+
+  |
+
+  |    |
+
+  |
+|  =C2=A0  |
+
+=20
+| =20
+|  =C2=A0  |
+|    |  February 4, 2016  |  #1786-4790  |    |
+|  =C2=A0  |
+
+  |
+
+  |
+
+=20
+| =20
+|    | =20
+|  =C2=A0  |
+|    |  Description  |    |  Price  |    |
+|  =C2=A0  |
+|  =C2=A0  |
+|    |  British Rowing Membership Payment (Gold - 9037)  |    |  =C2=A354.5=
+0  |    |
+|  =C2=A0  |
+| =20
+|  =C2=A0  |
+|    |  Total  |    |  =C2=A354.50  |    |
+|  =C2=A0  |
+
+  |
+
+  |    |
+
+  |
+
+=20
+| =20
+|  =C2=A0  |
+|    |  Have a question or need help? Send us an email, or give us a call a=
+t 020 8237 6700  |    |
+|  =C2=A0  |
+| =20
+|  =C2=A0  |
+
+  |
+
+  |
+
+=20
+| =20
+|  =C2=A0  |
+|    |  Something wrong with the email? View it in your browser.  |    |
+|  =C2=A0  |
+|    |  You are receiving this email because you made a purchase at British=
+ Rowing Ltd.  |    |
+|  =C2=A0  |
+
+  |
+
+  |
+
+ @media {#yiv3239832556 t {}}#yiv3239832556 div.yiv3239832556OutlookMessage=
+Header {}#yiv3239832556 table.yiv3239832556moz-email-headers-table {}#yiv32=
+39832556 blockquote t {}#yiv3239832556 #yiv3239832556MailContainerBody t {}=
+=20
+
+  
+------=_Part_1883079_1985082588.1454607971324
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><div style=3D"color:#000; background-color:#fff; f=
+ont-family:HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, =
+Sans-Serif;font-size:16px"><div id=3D"yui_3_16_0_1_1454413629905_49632"><sp=
+an></span></div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_1_14544136299=
+05_49631"><br>Hi Andy,</div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_1=
+_1454413629905_49631"><br></div><div class=3D"qtdSeparateBR" id=3D"yui_3_16=
+_0_1_1454413629905_49631" dir=3D"ltr">Found out today that my BR membership=
+ needs to be up to date for my coaching insurance and as Water Safety offic=
+er - so have renewed it on club card</div><div class=3D"qtdSeparateBR" id=
+=3D"yui_3_16_0_1_1454413629905_49631" dir=3D"ltr"><br></div><div class=3D"q=
+tdSeparateBR" id=3D"yui_3_16_0_1_1454413629905_49631" dir=3D"ltr"><br></div=
+><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_1_1454413629905_49631" dir=
+=3D"ltr">K</div><div class=3D"qtdSeparateBR" id=3D"yui_3_16_0_1_14544136299=
+05_49631" dir=3D"ltr"><br></div><div class=3D"qtdSeparateBR" id=3D"yui_3_16=
+_0_1_1454413629905_49631" dir=3D"ltr"><br></div><div class=3D"qtdSeparateBR=
+" id=3D"yui_3_16_0_1_1454413629905_49631" dir=3D"ltr"><br></div>  <div clas=
+s=3D"yahoo_quoted" id=3D"yui_3_16_0_1_1454413629905_49646" style=3D"display=
+: block;"> <div style=3D"font-family: HelveticaNeue, Helvetica Neue, Helvet=
+ica, Arial, Lucida Grande, Sans-Serif; font-size: 16px;" id=3D"yui_3_16_0_1=
+_1454413629905_49645"> <div style=3D"font-family: HelveticaNeue, Helvetica =
+Neue, Helvetica, Arial, Lucida Grande, Sans-Serif; font-size: 16px;" id=3D"=
+yui_3_16_0_1_1454413629905_49644"> <div dir=3D"ltr" id=3D"yui_3_16_0_1_1454=
+413629905_49643"><font size=3D"2" face=3D"Arial"> On Thursday, 4 February 2=
+016, 17:42, British Rowing Ltd &lt;receipts+jnL8yfY6W1EqUs5WlvLJ@stripe.com=
+&gt; wrote:<br></font></div>  <br><br> <div class=3D"y_msg_container"><div =
+id=3D"yiv3239832556">
+
+ =20
+    <title>Your British Rowing Ltd receipt [#1786-4790]</title>
+   =20
+   =20
+   =20
+   =20
+    <style type=3D"text/css">
+
+#yiv3239832556 a {
+text-decoration:none;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 span.yiv3239832556apple-override-header a {
+color:#000000;text-decoration:none;}
+
+#yiv3239832556 span.yiv3239832556apple-override-hidden a {
+color:#ffffff;text-decoration:none;}
+
+#yiv3239832556 span.yiv3239832556apple-override-dark a {
+color:#292e31;text-decoration:none;}
+
+#yiv3239832556 span.yiv3239832556apple-override-light a {
+color:#77858c;text-decoration:none;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 =20
+@media ( _filtered_a )(){
+
+#yiv3239832556 body .filtered99999  span.yiv3239832556retina img {
+visibility:hidden;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556icon span.yiv3239832556=
+retina {
+background:no-repeat 0 0 !important;background-size:72px 72px !important;di=
+splay:block;height:72px !important;width:72px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card td.yiv323983255=
+6card-type span.yiv3239832556retina {
+display:block;height:16px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-default td.yiv3=
+239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:22px 16px !important;wi=
+dth:22px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-default tr.yiv3=
+239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:22px 16px !important;wi=
+dth:22px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-visa td.yiv3239=
+832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:36px 16px !important;wi=
+dth:36px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-visa tr.yiv3239=
+832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:36px 16px !important;wi=
+dth:36px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-mastercard td.y=
+iv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:75px 16px !important;wi=
+dth:75px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-mastercard tr.y=
+iv3239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:75px 16px !important;wi=
+dth:75px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-amex td.yiv3239=
+832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:45px 16px !important;wi=
+dth:45px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-amex tr.yiv3239=
+832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:45px 16px !important;wi=
+dth:45px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-discover td.yiv=
+3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:57px 16px !important;wi=
+dth:57px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-discover tr.yiv=
+3239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:57px 16px !important;wi=
+dth:57px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-jcb td.yiv32398=
+32556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:19px 16px !important;wi=
+dth:19px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-jcb tr.yiv32398=
+32556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:19px 16px !important;wi=
+dth:19px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-diners td.yiv32=
+39832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:20px 16px !important;wi=
+dth:20px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-diners tr.yiv32=
+39832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:20px 16px !important;wi=
+dth:20px !important;}
+
+}
+
+#yiv3239832556 =20
+@media and ( _filtered_a ){
+
+#yiv3239832556 body .filtered99999  span.yiv3239832556retina img {
+visibility:hidden;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556font-large, #yiv3239832=
+556 body .filtered99999  td.yiv3239832556font-large span, #yiv3239832556 bo=
+dy .filtered99999  td.yiv3239832556font-large a {
+font-size:18px !important;line-height:25px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556font-medium, #yiv323983=
+2556 body .filtered99999  td.yiv3239832556font-medium span, #yiv3239832556 =
+body .filtered99999  td.yiv3239832556font-medium a {
+font-size:16px !important;line-height:23px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556font-small, #yiv3239832=
+556 body .filtered99999  td.yiv3239832556font-small span, #yiv3239832556 bo=
+dy .filtered99999  td.yiv3239832556font-small a {
+font-size:15px !important;line-height:21px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556icon span.yiv3239832556=
+retina {
+background:no-repeat 0 0 !important;background-size:72px 72px !important;di=
+splay:block;height:72px !important;width:72px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556title, #yiv3239832556 b=
+ody .filtered99999  td.yiv3239832556title span, #yiv3239832556 body .filter=
+ed99999  td.yiv3239832556title a {
+font-size:24px !important;line-height:28px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card td.yiv323983255=
+6card-type span.yiv3239832556retina {
+display:block;height:19px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-default td.yiv3=
+239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:25px 19px !important;wi=
+dth:25px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-default tr.yiv3=
+239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:25px 19px !important;wi=
+dth:25px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-visa td.yiv3239=
+832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:43px 19px !important;wi=
+dth:43px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-visa tr.yiv3239=
+832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:43px 19px !important;wi=
+dth:43px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-mastercard td.y=
+iv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:87px 19px !important;wi=
+dth:87px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-mastercard tr.y=
+iv3239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:87px 19px !important;wi=
+dth:87px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-amex td.yiv3239=
+832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:53px 19px !important;wi=
+dth:53px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-amex tr.yiv3239=
+832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:53px 19px !important;wi=
+dth:53px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-discover td.yiv=
+3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:70px 19px !important;wi=
+dth:70px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-discover tr.yiv=
+3239832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:70px 19px !important;wi=
+dth:70px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-jcb td.yiv32398=
+32556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:22px 19px !important;wi=
+dth:22px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-jcb tr.yiv32398=
+32556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:22px 19px !important;wi=
+dth:22px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-diners td.yiv32=
+39832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:23px 19px !important;wi=
+dth:23px !important;}
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card-diners tr.yiv32=
+39832556card-dark td.yiv3239832556card-type span.yiv3239832556retina {
+background:no-repeat 0 0 !important;background-size:23px 19px !important;wi=
+dth:23px !important;}
+
+#yiv3239832556 =20
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556card td.yiv323983255=
+6card-digits, #yiv3239832556 body .filtered99999  table.yiv3239832556card t=
+d.yiv3239832556card-digits span {
+font-size:16px !important;line-height:16px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556summary-total {
+font-size:20px !important;line-height:25px !important;}
+
+}
+
+#yiv3239832556 =20
+@media and ( _filtered_a ){
+
+#yiv3239832556 body .filtered99999  table.yiv3239832556width, #yiv323983255=
+6 body .filtered99999  td.yiv3239832556width {
+width:100% !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556temp-padding, #yiv32398=
+32556 body .filtered99999  td.yiv3239832556temp-padding div.yiv3239832556cl=
+ear {
+display:none;width:0 !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556banner {
+height:186px !important;}
+
+#yiv3239832556 body .filtered99999  td.yiv3239832556subbanner-item {
+display:block;padding-left:10px !important;padding-right:10px !important;te=
+xt-align:center;width:100% !important;}
+
+#yiv3239832556 body .filtered99999  tr.yiv3239832556summary-item td.yiv3239=
+832556summary-padding, #yiv3239832556 body .filtered99999  tr.yiv3239832556=
+summary-item td.yiv3239832556summary-padding div.yiv3239832556clear {
+width:17px !important;}
+
+#yiv3239832556 body .filtered99999  a.yiv3239832556browser-link {
+display:block;}
+
+}
+
+</style>
+ =20
+  <div>
+
+   =20
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+      <tbody>
+        <tr>
+          <td bgcolor=3D"f9fafa" style=3D"border:0;margin:0;padding:0;">
+
+           =20
+            <table style=3D"background-color:#ffffff;border-bottom:1px soli=
+d #e4e6e8;" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+>
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D"border:0;margin:0;padding:0=
+;">
+
+                   =20
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td align=3D"center" style=3D"border:0;margin:0;p=
+adding:0;">
+                            <table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"yiv3239832556width" width=3D"500">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" height=3D"20" style=
+=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;color:#ffffff=
+;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;">
+                                    Thanks for your =C2=A354.50 payment to =
+<span class=3D"yiv3239832556apple-override-hidden" style=3D"border:0;margin=
+:0;padding:0;font-size:1px;line-height:1px;color:#ffffff;font-family:'Helve=
+tica Neue', Helvetica, Arial, sans-serif;">British Rowing Ltd</span>.
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   =20
+
+                   =20
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"yiv3239832556width" width=3D"500">
+                      <tbody>
+                        <tr>
+                          <td height=3D"7" style=3D"border:0;margin:0;paddi=
+ng:0;font-size:1px;line-height:1px;" width=3D"100%">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:7px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class=3D"yiv3239832556banner" style=3D"border=
+:0;margin:0;padding:0;font-size:1px;line-height:1px;" valign=3D"middle">
+                            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%">
+                              <tbody><tr>
+                                <td class=3D"yiv3239832556perm-padding" sty=
+le=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"=
+20">
+                                  <div class=3D"yiv3239832556clear" style=
+=3D"height:1px;width:20px;"></div>
+                                </td>
+                                <td style=3D"border:0;margin:0;padding:0;" =
+width=3D"100%">
+                                  <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%">
+                                      <tbody><tr>
+                                        <td align=3D"center" class=3D"yiv32=
+39832556icon" height=3D"72" style=3D"border:0;margin:0;padding:0;">
+                                          <a rel=3D"nofollow" target=3D"_bl=
+ank" href=3D"http://britishrowing.org/" style=3D"border:0;margin:0;padding:=
+0;">
+                                            <span class=3D"yiv3239832556ret=
+ina">
+                                              <img alt=3D"" height=3D"72" s=
+tyle=3D"border:0;margin:0;padding:0;" width=3D"72" data-id=3D"0dbd95ff-3159=
+-b382-bb6f-1514ba29396a">
+                                            </span>
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    <tr>
+                                      <td height=3D"22" style=3D"border:0;m=
+argin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                        <div class=3D"yiv3239832556clear" s=
+tyle=3D"height:22px;width:1px;">&nbsp;</div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td align=3D"center" class=3D"yiv3239=
+832556title" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height=
+:1px;color:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sans-ser=
+if;font-size:22px;line-height:25px;">
+                                          <span class=3D"yiv3239832556apple=
+-overrride" style=3D"color:#000000;font-family:'Helvetica Neue', Helvetica,=
+ Arial, sans-serif;font-size:22px;line-height:25px;">=C2=A354.50</span><spa=
+n style=3D"color:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sa=
+ns-serif;font-size:22px;line-height:25px;">&nbsp;at&nbsp;</span><a rel=3D"n=
+ofollow" target=3D"_blank" href=3D"http://britishrowing.org/" style=3D"colo=
+r:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-s=
+ize:22px;line-height:25px;text-decoration:none;"><span class=3D"yiv32398325=
+56apple-override-header" style=3D"color:#000000;font-family:'Helvetica Neue=
+', Helvetica, Arial, sans-serif;font-size:22px;line-height:25px;text-decora=
+tion:none;">British Rowing Ltd</span></a>
+                                      </td>
+                                    </tr>
+
+                                     =20
+                                      <tr>
+                                        <td height=3D"13" style=3D"border:0=
+;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                          <div class=3D"yiv3239832556clear"=
+ style=3D"height:13px;width:1px;">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align=3D"center" height=3D"1" s=
+tyle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=
+=3D"100%">
+                                          <table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"200">
+                                            <tbody>
+                                              <tr>
+                                                <td bgcolor=3D"#e5e5e5" sty=
+le=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;">
+                                                  <div class=3D"yiv32398325=
+56clear" style=3D"height:1px;width:200px;">&nbsp;</div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td height=3D"18" style=3D"border:0=
+;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                          <div class=3D"yiv3239832556clear"=
+ style=3D"height:18px;width:1px;">&nbsp;</div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td align=3D"center" style=3D"borde=
+r:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                          <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"yiv3239832556card yiv3239832556card-visa"=
+>
+                                          <tbody>
+                                            <tr class=3D"yiv3239832556card-=
+dark">
+                                              <td class=3D"yiv3239832556car=
+d-type" style=3D"border:0;margin:0;padding:0;" valign=3D"top">
+                                                <span class=3D"yiv323983255=
+6retina">
+                                                  <img alt=3D"Visa" height=
+=3D"16" style=3D"border:0;margin:0;padding:0;" width=3D"36" data-id=3D"dac3=
+6195-e835-5f9e-89c6-7162aa03fe7b">
+                                                </span>
+                                              </td>
+                                              <td style=3D"border:0;margin:=
+0;padding:0;font-size:1px;line-height:1px;" width=3D"6">
+                                                <div class=3D"yiv3239832556=
+clear" style=3D"height:1px;width:6px;">&nbsp;</div>
+                                              </td>
+                                              <td class=3D"yiv3239832556car=
+d-digits" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1p=
+x;color:#000000;font-family:'Lucida Console', monospace;font-size:14px;line=
+-height:14px;vertical-align:middle;" valign=3D"middle">
+                                                <span style=3D"color:#00000=
+0;font-family:'Lucida Console', monospace;font-size:14px;line-height:14px;v=
+ertical-align:middle;">9014</span>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                        </td>
+                                      </tr>
+                                     =20
+
+                                  </tbody></table>
+                                </td>
+                                <td class=3D"yiv3239832556perm-padding" sty=
+le=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"=
+20">
+                                  <div class=3D"yiv3239832556clear" style=
+=3D"height:1px;width:20px;"></div>
+                                </td>
+                              </tr>
+                            </tbody></table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height=3D"27" style=3D"border:0;margin:0;padd=
+ing:0;font-size:1px;line-height:1px;" width=3D"100%">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:27px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   =20
+
+                   =20
+                    <table bgcolor=3D"#e5e5e5" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td align=3D"center" style=3D"border:0;margin:0;p=
+adding:0;font-size:1px;line-height:1px;">
+                            <table class=3D"yiv3239832556width" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"500">
+                              <tbody>
+                                <tr>
+                                  <td colspan=3D"4" height=3D"8" style=3D"b=
+order:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                    <div class=3D"yiv3239832556clear" style=
+=3D"height:8px;width:1px;">&nbsp;</div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class=3D"yiv3239832556perm-padding" s=
+tyle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=
+=3D"20">
+                                    <div class=3D"yiv3239832556clear" style=
+=3D"height:1px 20px;"></div>
+                                  </td>
+                                  <td align=3D"left" class=3D"yiv3239832556=
+subbanner-item yiv3239832556font-small" style=3D"border:0;margin:0;padding:=
+0;font-size:1px;line-height:1px;color:#000000;font-family:'Helvetica Neue',=
+ Helvetica, Arial, sans-serif;font-size:13px;line-height:17px;" width=3D"23=
+0">
+                                    <span class=3D"yiv3239832556apple-overr=
+ide-header" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:=
+1px;color:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sans-seri=
+f;font-size:13px;line-height:17px;">February  4, 2016</span>
+                                  </td>
+                                  <td align=3D"right" class=3D"yiv323983255=
+6subbanner-item yiv3239832556font-small" style=3D"border:0;margin:0;padding=
+:0;font-size:1px;line-height:1px;color:#000000;font-family:'Helvetica Neue'=
+, Helvetica, Arial, sans-serif;font-size:13px;line-height:17px;" width=3D"2=
+30">
+                                    <span class=3D"yiv3239832556apple-overr=
+ide-header" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:=
+1px;color:#000000;font-family:'Helvetica Neue', Helvetica, Arial, sans-seri=
+f;font-size:13px;line-height:17px;">#1786-4790</span>
+                                  </td>
+                                  <td class=3D"yiv3239832556perm-padding" s=
+tyle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=
+=3D"20">
+                                    <div class=3D"yiv3239832556clear" style=
+=3D"height:1px 20px;"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td colspan=3D"4" height=3D"8" style=3D"b=
+order:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"100%">
+                                    <div class=3D"yiv3239832556clear" style=
+=3D"height:8px;width:1px;">&nbsp;</div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                   =20
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+           =20
+
+             =20
+<table bgcolor=3D"ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+style=3D"border-bottom:1px solid #e4e6e8;" width=3D"100%">
+  <tbody>
+    <tr>
+      <td align=3D"center" style=3D"border:0;margin:0;padding:0;">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"yi=
+v3239832556width" width=3D"500">
+          <tbody>
+            <tr>
+              <td class=3D"yiv3239832556temp-padding" style=3D"border:0;mar=
+gin:0;padding:0;font-size:1px;line-height:1px;">
+                <div class=3D"yiv3239832556clear" style=3D"height:1px;width=
+:20px;"></div>
+              </td>
+              <td style=3D"border:0;margin:0;padding:0;font-size:1px;line-h=
+eight:1px;" width=3D"460">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%">
+                  <tbody>
+
+                   =20
+                    <tr>
+                      <td colspan=3D"5" height=3D"12" style=3D"border:0;mar=
+gin:0;padding:0;font-size:1px;line-height:1px;">
+                        <div class=3D"yiv3239832556clear" style=3D"height:1=
+2px;width:1px;">&nbsp;</div>
+                      </td>
+                    </tr>
+                    <tr class=3D"yiv3239832556summary-item">
+                      <td class=3D"yiv3239832556summary-padding" style=3D"b=
+order:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"1">
+                        <div class=3D"yiv3239832556clear" style=3D"height:1=
+px;width:1px;"></div>
+                      </td>
+                      <td align=3D"left" class=3D"yiv3239832556font-small" =
+style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;color:#7=
+7858c;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:=
+12px;font-weight:bold;line-height:20px;" width=3D"100%">
+                        Description
+                      </td>
+                      <td style=3D"border:0;margin:0;padding:0;font-size:1p=
+x;line-height:1px;" width=3D"10">
+                        <div class=3D"yiv3239832556clear" style=3D"height:1=
+px;width:10px;"></div>
+                      </td>
+                      <td align=3D"right" class=3D"yiv3239832556font-small"=
+ style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;color:#=
+77858c;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size=
+:12px;font-weight:bold;line-height:20px;" width=3D"120">
+                        Price
+                      </td>
+                      <td class=3D"yiv3239832556summary-padding" style=3D"b=
+order:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"1">
+                        <div class=3D"yiv3239832556clear" style=3D"height:1=
+px;width:1px;"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan=3D"5" height=3D"12" style=3D"border:0;mar=
+gin:0;padding:0;font-size:1px;line-height:1px;border-bottom:1px solid #eaef=
+f2;">
+                        <div class=3D"yiv3239832556clear" style=3D"height:1=
+2px;width:1px;">&nbsp;</div>
+                      </td>
+                    </tr>
+                   =20
+
+                     =20
+                      <tr>
+                        <td colspan=3D"5" height=3D"11" style=3D"border:0;m=
+argin:0;padding:0;font-size:1px;line-height:1px;border-top:1px solid #eaeff=
+2;">
+                          <div class=3D"yiv3239832556clear" style=3D"height=
+:11px;width:1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                      <tr class=3D"yiv3239832556summary-item">
+                        <td class=3D"yiv3239832556summary-padding" style=3D=
+"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"1">
+                          <div class=3D"yiv3239832556clear" style=3D"height=
+:1px;width:1px;"></div>
+                        </td>
+                        <td align=3D"left" class=3D"yiv3239832556font-mediu=
+m" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;color=
+:#292e31;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-si=
+ze:14px;font-weight:normal;line-height:17px;" width=3D"100%">
+                          <span class=3D"yiv3239832556apple-override-dark" =
+style=3D"border:0;margin:0;padding:0;">British Rowing Membership Payment (G=
+old - 9037)</span>
+                        </td>
+                        <td style=3D"border:0;margin:0;padding:0;font-size:=
+1px;line-height:1px;" width=3D"10">
+                          <div class=3D"yiv3239832556clear" style=3D"height=
+:1px;width:10px;"></div>
+                        </td>
+                        <td align=3D"right" class=3D"yiv3239832556font-medi=
+um" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;colo=
+r:#292e31;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-s=
+ize:14px;font-weight:normal;line-height:17px;" width=3D"120">
+                          =C2=A354.50
+                        </td>
+                        <td class=3D"yiv3239832556summary-padding" style=3D=
+"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"1">
+                          <div class=3D"yiv3239832556clear" style=3D"height=
+:1px;width:1px;"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan=3D"5" height=3D"12" style=3D"border:0;m=
+argin:0;padding:0;font-size:1px;line-height:1px;">
+                          <div class=3D"yiv3239832556clear" style=3D"height=
+:12px;width:1px;">&nbsp;</div>
+                        </td>
+                      </tr>
+                     =20
+
+                   =20
+                    <tr>
+                      <td colspan=3D"5" align=3D"right" style=3D"border:0;m=
+argin:0;padding:0;font-size:1px;line-height:1px;border-top:2px solid #eaeff=
+2;">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"yiv3239832556width" width=3D"320">
+                          <tbody>
+
+                           =20
+                            <tr>
+                              <td colspan=3D"5" height=3D"11" style=3D"bord=
+er:0;margin:0;padding:0;font-size:1px;line-height:1px;">
+                                <div class=3D"yiv3239832556clear" style=3D"=
+height:11px;width:1px;">&nbsp;</div>
+                              </td>
+                            </tr>
+                            <tr class=3D"yiv3239832556summary-item">
+                              <td class=3D"yiv3239832556summary-padding" st=
+yle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D=
+"1">
+                                <div class=3D"yiv3239832556clear" style=3D"=
+height:1px;width:1px;"></div>
+                              </td>
+                              <td align=3D"left" style=3D"border:0;margin:0=
+;padding:0;font-size:1px;line-height:1px;color:#292e31;font-family:'Helveti=
+ca Neue', Helvetica, Arial, sans-serif;font-size:12px;font-weight:bold;line=
+-height:17px;" width=3D"100">
+                                Total
+                              </td>
+                              <td style=3D"border:0;margin:0;padding:0;font=
+-size:1px;line-height:1px;" width=3D"10">
+                                <div class=3D"yiv3239832556clear" style=3D"=
+height:1px;width:10px;"></div>
+                              </td>
+                              <td align=3D"right" class=3D"yiv3239832556sum=
+mary-total yiv3239832556width" style=3D"border:0;margin:0;padding:0;font-si=
+ze:1px;line-height:1px;color:#292e31;font-family:'Helvetica Neue', Helvetic=
+a, Arial, sans-serif;font-size:16px;font-weight:bold;line-height:17px;" wid=
+th=3D"208">
+                                =C2=A354.50
+                              </td>
+                              <td class=3D"yiv3239832556summary-padding" st=
+yle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D=
+"1">
+                                <div class=3D"yiv3239832556clear" style=3D"=
+height:1px;width:1px;"></div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan=3D"5" height=3D"12" style=3D"bord=
+er:0;margin:0;padding:0;font-size:1px;line-height:1px;">
+                                <div class=3D"yiv3239832556clear" style=3D"=
+height:12px;width:1px;">&nbsp;</div>
+                              </td>
+                            </tr>
+                           =20
+
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                   =20
+
+                  </tbody>
+                </table>
+              </td>
+              <td class=3D"yiv3239832556temp-padding" style=3D"border:0;mar=
+gin:0;padding:0;font-size:1px;line-height:1px;">
+                <div class=3D"yiv3239832556clear" style=3D"height:1px;width=
+:20px;"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+           =20
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D"border:0;margin:0;padding:0=
+;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"yiv3239832556width" width=3D"500">
+                      <tbody>
+                        <tr>
+                          <td colspan=3D"3" height=3D"37" style=3D"border:0=
+;margin:0;padding:0;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:37px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style=3D"border:0;margin:0;padding:0;font-siz=
+e:1px;line-height:1px;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:1px;width:20px;"></div>
+                          </td>
+                          <td align=3D"center" class=3D"yiv3239832556font-l=
+arge" style=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;co=
+lor:#515f66;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font=
+-size:15px;line-height:21px;">
+                            Have a question or need help?
+                            <a rel=3D"nofollow" ymailto=3D"mailto:info@brit=
+ishrowing.org" target=3D"_blank" href=3D"mailto:info@britishrowing.org" sty=
+le=3D"border:0;margin:0;padding:0;color:#515f66;font-family:'Helvetica Neue=
+', Helvetica, Arial, sans-serif;text-decoration:none;"><span style=3D"borde=
+r:0;margin:0;padding:0;color:#008cdd;text-decoration:none;">Send us an emai=
+l</span></a>, or <a rel=3D"nofollow" style=3D"border:0;margin:0;padding:0;c=
+olor:#515f66;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;tex=
+t-decoration:none;" href=3D""><span style=3D"border:0;margin:0;padding:0;co=
+lor:#008cdd;text-decoration:none;">give us a call at 020  8237 6700</span><=
+/a>
+                          </td>
+                          <td style=3D"border:0;margin:0;padding:0;font-siz=
+e:1px;line-height:1px;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:1px;width:20px;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan=3D"3" height=3D"37" style=3D"border:0=
+;margin:0;padding:0;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:37px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan=3D"3" align=3D"center" height=3D"1" s=
+tyle=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;">
+                            <table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"200">
+                              <tbody>
+                                <tr>
+                                  <td bgcolor=3D"edeff0" style=3D"border:0;=
+margin:0;padding:0;font-size:1px;line-height:1px;">
+                                    <div class=3D"yiv3239832556clear" style=
+=3D"height:1px;width:200px;">&nbsp;</div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+           =20
+
+           =20
+            <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D"border:0;margin:0;padding:0=
+;">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"yiv3239832556width" width=3D"500">
+                      <tbody>
+                        <tr>
+                          <td colspan=3D"3" height=3D"28" style=3D"border:0=
+;margin:0;padding:0;font-size:1px;line-height:1px;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:28px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+
+                         =20
+                          <tr>
+                            <td class=3D"yiv3239832556perm-padding" style=
+=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"20=
+">
+                              <div class=3D"yiv3239832556clear" style=3D"he=
+ight:1px;width:20px;"></div>
+                            </td>
+                            <td align=3D"center" class=3D"yiv3239832556font=
+-small" style=3D"border:0;margin:0;padding:0;color:#959fa5;font-family:'Hel=
+vetica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:17px;=
+">
+                              Something wrong with the email? <a rel=3D"nof=
+ollow" class=3D"yiv3239832556browser-link" target=3D"_blank" href=3D"https:=
+//dashboard.stripe.com/emails/receipts/pmtrc_7qYDRVWvt4z3cO" style=3D"borde=
+r:0;margin:0;padding:0;color:#008cdd;font-family:'Helvetica Neue', Helvetic=
+a, Arial, sans-serif;text-decoration:none;"><span style=3D"border:0;margin:=
+0;padding:0;color:#008cdd;text-decoration:none;">View it in your browser.</=
+span></a>
+                            </td>
+                            <td class=3D"yiv3239832556perm-padding" style=
+=3D"border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"20=
+">
+                              <div class=3D"yiv3239832556clear" style=3D"he=
+ight:1px;width:20px;"></div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan=3D"3" height=3D"4" style=3D"border:=
+0;margin:0;padding:0;font-size:1px;line-height:1px;">
+                              <div class=3D"yiv3239832556clear" style=3D"he=
+ight:4px;width:1px;">&nbsp;</div>
+                            </td>
+                          </tr>
+                         =20
+
+                        <tr>
+                          <td class=3D"yiv3239832556perm-padding" style=3D"=
+border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"20">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:1px;width:20px;"></div>
+                          </td>
+                          <td align=3D"center" class=3D"yiv3239832556font-s=
+mall" style=3D"border:0;margin:0;padding:0;color:#959fa5;font-family:'Helve=
+tica Neue', Helvetica, Arial, sans-serif;font-size:13px;line-height:17px;">
+                              You are receiving this email because you made=
+ a purchase at <a rel=3D"nofollow" target=3D"_blank" href=3D"http://british=
+rowing.org/" style=3D"border:0;margin:0;padding:0;color:#008cdd;font-family=
+:'Helvetica Neue', Helvetica, Arial, sans-serif;text-decoration:none;"><spa=
+n style=3D"border:0;margin:0;padding:0;color:#008cdd;text-decoration:none;"=
+>British Rowing Ltd</span></a>.
+
+                          </td>
+                          <td class=3D"yiv3239832556perm-padding" style=3D"=
+border:0;margin:0;padding:0;font-size:1px;line-height:1px;" width=3D"20">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:1px;width:20px;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan=3D"3" height=3D"28" style=3D"border:0=
+;margin:0;padding:0;font-size:1px;line-height:1px;">
+                            <div class=3D"yiv3239832556clear" style=3D"heig=
+ht:28px;width:1px;">&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+           =20
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   =20
+
+     =20
+      <style>@media {#yiv3239832556 t {}}#yiv3239832556 div.yiv3239832556Ou=
+tlookMessageHeader {}#yiv3239832556 table.yiv3239832556moz-email-headers-ta=
+ble {}#yiv3239832556 blockquote t {}#yiv3239832556 #yiv3239832556MailContai=
+nerBody t {}</style><div id=3D"yiv3239832556_t"></div><img width=3D"1" heig=
+ht=3D"1" border=3D"0" data-id=3D"299fa255-09f9-8ba7-ae80-216bcdfc7379">
+     =20
+
+  </div>
+</div><br><br></div>  </div> </div>  </div></div></body></html>
+------=_Part_1883079_1985082588.1454607971324--

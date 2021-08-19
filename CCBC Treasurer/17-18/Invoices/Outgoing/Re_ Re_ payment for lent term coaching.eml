@@ -1,0 +1,493 @@
+Return-Path: <john3mccarthy@gmail.com>
+Received: from ppsw-31.csi.cam.ac.uk (ppsw-31-intramail.csi.cam.ac.uk [192.168.128.131])
+	 by cyrus-2a.csi.private.cam.ac.uk (Cyrus v2.4.20) with LMTPA;
+	 Wed, 11 Apr 2018 12:32:08 +0100
+X-Sieve: CMU Sieve 2.4
+X-Cam-SpamDetails: score -0.2 from SpamAssassin-3.4.1-1828880 
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [209.85.217.171 listed in list.dnswl.dnsbl.ja.net]
+ * -0.0 RCVD_IN_MSPIKE_H2 RBL: Average reputation (+2)
+ *      [209.85.217.171 listed in wl.mailspike.net]
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *       (john3mccarthy[at]gmail.com)
+ *  0.0 HTML_MESSAGE BODY: HTML included in message
+ * -0.1 BAYES_00 BODY: Bayes spam probability is 0 to 1%
+ *      [score: 0.0000]
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+ *      author's domain
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+X-Cam-ScannerInfo: http://help.uis.cam.ac.uk/email-scanner-virus
+Received: from mail-ua0-f171.google.com ([209.85.217.171]:42945)
+	by ppsw-31.csi.cam.ac.uk (mx.cam.ac.uk [131.111.8.147]:25)
+	with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	id 1f6Dyx-000JkT-LG (Exim 4.89_2) for ma616@cam.ac.uk
+	(return-path <john3mccarthy@gmail.com>); Wed, 11 Apr 2018 12:32:08 +0100
+Received: by mail-ua0-f171.google.com with SMTP id o34so900897uae.9
+        for <ma616@cam.ac.uk>; Wed, 11 Apr 2018 04:32:07 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=i/HjCC96O9l2GARJrgSiR8G9gkirf1cdWUaUxuDcoHs=;
+        b=B76vNjB1AAqpzBrYBWvd6G+EjgImI7OXjG6blgwbiW+b3kQ8xLffaLYAPmbW/SQdBC
+         L/c+zOe3p/IjOMCjPGkONb1KC+V+0Sm3nLL2sJ74fewT0L3ynhlxcCf9JPpyEWx9AKFt
+         6V7kUsXpUW6KlIe4Gbm5IEWh4hnGqLgYEfLqwvhyKAsyvDMLOeznbUae9vhNZWQII8Af
+         C5I47L01OC/BLSLU33hnCx64Dr3wX5lNMxppAAVCyFr2indeKBEHxu/viYem7/7rOADv
+         5NxTNfskFf+CLnrqkXNP3XVzhB71eCu7pGAnol6dI7f9U+pYRNNGVbN80bwBdBpFunI4
+         m1bw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=i/HjCC96O9l2GARJrgSiR8G9gkirf1cdWUaUxuDcoHs=;
+        b=Vjy8Iuz7GMt3tGlEouvZTaszqnxGjkypIAZw0cU8T6trb44mCtcLYjTdMx3ZGorf0j
+         7IcE41EiD2PgmmQBhI5lQskE0J0KWxwLrGxjJDSFrgai5ttL1xbqbo1DR1i/MGDhNm9t
+         H6xoXCnc9K4BxBO3WLKMvZH4zp5cV/Va8IvbNxFxWGuCzpHdB0r1tEMhVjnZ0cVTLUEU
+         BgM0JBoiA8twg8EOY0MfZWJAcJJvkEcdmD/pI4Dge9OaKbMPxvLX6+e2ICMmDmdjY19A
+         oXvNrOsTYiP3FqbOHf8AoJUXGqEMp6alZDPJQyIppPI2+0WOrBGQZZ7utjw76/nwtGGV
+         5wkg==
+X-Gm-Message-State: ALQs6tCUzfsCQ/P2tbJoTyN84LTDaZ9ElGLtpz9ojv7G70VON/3jR5vC
+	62yRbkoaGYY93Z7w8qZyKeuPTaqPvielHeDRjNMrPQ==
+X-Google-Smtp-Source: AIpwx49ZV45FMdZUwVQ424V8KxpI6fIdf+RQ9xQTnwIiZlY1hzM0DQGQWsLJCJhcKickpMKPkY37nB1uTU03+QlnW1Q=
+X-Received: by 10.176.20.106 with SMTP id c39mr3118626uae.82.1523446326485;
+ Wed, 11 Apr 2018 04:32:06 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.103.199.142 with HTTP; Wed, 11 Apr 2018 04:31:25 -0700 (PDT)
+In-Reply-To: <5801f9bfe78aed1b6cd436726e82d4c3@cam.ac.uk>
+References: <5801f9bfe78aed1b6cd436726e82d4c3@cam.ac.uk>
+From: EJ McCarthy <john3mccarthy@gmail.com>
+Date: Wed, 11 Apr 2018 12:31:25 +0100
+Message-ID: <CACST+GG1HDxTgwSxyLaFhu1nPfnWcEJxBMMHx3DuK4xMi9Vt0g@mail.gmail.com>
+Subject: Re: Re: payment for lent term coaching
+To: "M. Apsley" <ma616@cam.ac.uk>
+Content-Type: multipart/alternative; boundary="001a11451db41fe962056990fdac"
+
+--001a11451db41fe962056990fdac
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Miriam,
+   Thanks for the heads up! I think that might be a bit short of what I was
+promised for the term. I have attached the email below from Kate at the
+beginning of the term indicating the correct rate. Thanks in advance for
+rectifying.
+-EJ
+
+Kate Hurst <csh54@cam.ac.uk>
+Jan 16
+to *an463*, *Alister*, me
+
+Hi E J!
+
+
+
+Glad to hear from you, we=E2=80=99ve got a number of crews out this term an=
+d could
+really use some help with the coaching.  We pay =C2=A325 per session
+
+
+
+Al and I are intending to cover M1 and M2, but we have two competing M3
+crews (a and b)  who will both be looking to get on for Lent bumps this
+year.  This should total a minimum 4 or more water sessions.  Anton, the
+men=E2=80=99s Captain  should be in touch with their schedule and names etc=
+.
+Please let him know if you have any times you CANNOT do.
+
+
+
+Best Wishes
+
+
+
+Kate
+
+
+
+
+On Tue, Apr 10, 2018 at 8:20 PM, M. Apsley <ma616@cam.ac.uk> wrote:
+
+> Dear EJ,
+>
+> Many apologies for the delay we have had in paying for coaching, but I
+> have just transferred =C2=A3280 =3D 14 sessions at =C2=A320 per session. =
+Reference
+> Christ's coaching.  Please let me know if there are any problems.
+>
+> Many thanks for all your coaching,
+>
+> Miriam
+>
+> -------- Original Message --------
+> Subject: Re: payment for lent term coaching
+> Date: 2018-04-10 10:35
+> From: Anton Nilsson <an463@cam.ac.uk>
+> To: "M. Apsley" <ma616@cam.ac.uk>
+>
+>
+>
+> Kate just confirmed, 20=C2=A3 a session! Thanks for sorting
+>
+> Anton
+>
+> 9 apr. 2018 kl. 10:32 skrev Anton Nilsson <an463@cam.ac.uk>:
+>
+> Hi,
+>
+> Yes sorry I missed the last email. He counted to 14 sessions for m2 and m=
+3
+> and that sounds about right. I can't remember what he's fee is though so
+> have CCed Kate as well. I believe it's 20 pounds a session but please
+> confirm that Kate. Banking details is in a previous email. Once Kate
+> confirms fee it would be great if we could sort payment ASAP since I miss=
+ed
+> the email, sorry about that again.
+>
+> All the best,
+>
+> Anton
+>
+> 7 apr. 2018 kl. 21:21 skrev M. Apsley <ma616@cam.ac.uk>:
+>
+> Hi Anton,
+>
+> Don't think I ever got an invoice for this. Do you know where it got to?
+>
+> Miriam
+>
+> -------- Original Message --------
+> Subject: Re: payment for lent term coaching
+> Date: 2018-03-19 20:21
+> From: Anton Nilsson <an463@cam.ac.uk>
+> To: EJ McCarthy <john3mccarthy@gmail.com>
+> Copy: ma616@cam.ac.uk
+>
+>
+> Thats perfect! Just send me over your log over hours, I trust you! I'll
+> just swing it by Ben and Seb as well since they've been coordinating most
+> sessions. Hope that works!
+>
+> Anton
+>
+> 19 mars 2018 kl. 20:45 skrev EJ McCarthy <john3mccarthy@gmail.com>:
+>
+> Hey Anton,
+>    I'll just add Miriam to the email chain. Bank details are Barclays sor=
+t
+> code: 20-17-19; account: 80205095. Please let me know what you all have a=
+s
+> hours on file for me and ill cross check it against what I've got logged.
+> Cheers and please let me know if there is anything else that needs doing =
+on
+> my end. Best.
+> -EJ
+>
+> On Sat, Mar 17, 2018 at 4:59 PM, Anton Nilsson <an463@cam.ac.uk> wrote:
+>
+>> Hey EJ,
+>>
+>> You can run it through me or directly with out treasurer Miriam (
+>> ma616@cam.ac.uk). Let me know if you have more questions!
+>>
+>> Best wishes,
+>>
+>> Anton
+>>
+>> > 16 mars 2018 kl. 19:04 skrev EJ McCarthy <john3mccarthy@gmail.com>:
+>> >
+>> > hey whats up anton,
+>> >     just wanted to touch base and inquire who i speak with regards to
+>> payment for coaching this past term. best regards.
+>> > -ej
+>>
+>>
+
+--001a11451db41fe962056990fdac
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Miriam,<div>=C2=A0 =C2=A0Thanks for the heads up! I thi=
+nk that might be a bit short of what I was promised for the term. I have at=
+tached the email below from Kate at the beginning of the term indicating th=
+e correct rate. Thanks in advance for rectifying.=C2=A0</div><div>-EJ</div>=
+<div><br></div><div><div class=3D"gmail-gE gmail-iv gmail-gt" style=3D"padd=
+ing:12px 0px 3px;font-size:12.8px;color:rgb(34,34,34);font-family:arial,san=
+s-serif;font-style:normal;font-variant-ligatures:normal;font-variant-caps:n=
+ormal;font-weight:400;letter-spacing:normal;text-align:start;text-indent:0p=
+x;text-transform:none;white-space:normal;word-spacing:0px;background-color:=
+rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initia=
+l"><table cellpadding=3D"0" class=3D"gmail-cf gmail-gJ" style=3D"border-col=
+lapse:collapse;margin-top:0px;width:auto"><tbody><tr class=3D"gmail-acZ" st=
+yle=3D"height:16px"><td class=3D"gmail-gF gmail-gK" style=3D"font-family:ar=
+ial,sans-serif;margin:0px;text-align:left;white-space:nowrap;padding-right:=
+8px;vertical-align:top;width:819px;padding-top:0px"><table cellpadding=3D"0=
+" class=3D"gmail-cf gmail-ix" style=3D"border-collapse:collapse;table-layou=
+t:fixed;width:819px"><tbody><tr><td style=3D"font-family:arial,sans-serif;m=
+argin:0px"><h3 class=3D"gmail-iw" style=3D"overflow:hidden;white-space:nowr=
+ap;max-width:92%;display:inline-block;font-size:inherit;font-weight:inherit=
+;margin:inherit"><span name=3D"Kate Hurst" class=3D"gmail-gD" style=3D"colo=
+r:rgb(34,34,34);font-size:12.8px;font-weight:bold;white-space:nowrap;displa=
+y:inline;vertical-align:top">Kate Hurst</span><span>=C2=A0</span><span clas=
+s=3D"gmail-go" style=3D"vertical-align:top;color:rgb(85,85,85)"><span>&lt;<=
+/span><a href=3D"mailto:csh54@cam.ac.uk">csh54@cam.ac.uk</a><span>&gt;</spa=
+n></span></h3></td></tr></tbody></table></td><td class=3D"gmail-gH gmail-bA=
+k" style=3D"font-family:arial,sans-serif;margin:0px;text-align:right;white-=
+space:nowrap;vertical-align:top;color:rgb(34,34,34)"><div class=3D"gmail-gK=
+" style=3D"padding-top:0px;padding-right:2px"><span></span><span id=3D"gmai=
+l-:pq" class=3D"gmail-g3" title=3D"Tue, Jan 16, 2018 at 9:21 AM" alt=3D"Tue=
+, Jan 16, 2018 at 9:21 AM" style=3D"vertical-align:top;margin-right:3px">Ja=
+n 16</span><div class=3D"gmail-zd gmail-bi4" title=3D"Not starred" tabindex=
+=3D"0" style=3D"display:inline-block;height:20px;outline:0px"><span class=
+=3D"gmail-T-KT" style=3D"display:inline-block;height:19px;text-align:center=
+;width:19px;padding:2px"><img class=3D"gmail-f gmail-T-KT-JX" src=3D"https:=
+//mail.google.com/mail/u/0/images/cleardot.gif" alt=3D"" style=3D"margin-to=
+p: 0px; vertical-align: top;"></span></div></div></td><td class=3D"gmail-gH=
+" style=3D"font-family:arial,sans-serif;margin:0px;text-align:right;white-s=
+pace:nowrap;vertical-align:top;color:rgb(34,34,34)"></td><td class=3D"gmail=
+-gH gmail-acX gmail-bAm" rowspan=3D"2" style=3D"font-family:arial,sans-seri=
+f;margin:0px;text-align:right;white-space:nowrap;vertical-align:top;color:r=
+gb(34,34,34)"><div class=3D"gmail-T-I gmail-J-J5-Ji gmail-T-I-Js-IF gmail-a=
+aq gmail-T-I-ax7 gmail-L3" tabindex=3D"0" style=3D"display:inline-block;bor=
+der-radius:2px 0px 0px 2px;font-size:11px;font-weight:bold;text-align:cente=
+r;white-space:nowrap;margin-right:0px;height:27px;line-height:27px;min-widt=
+h:32px;outline:0px;padding:0px 8px;background-color:rgb(245,245,245);color:=
+rgb(68,68,68);border:1px solid rgba(0,0,0,0.1)"><img class=3D"gmail-hB gmai=
+l-T-I-J3" src=3D"https://mail.google.com/mail/u/0/images/cleardot.gif" alt=
+=3D"" style=3D"background: url(&quot;https://ssl.gstatic.com/mail/sprites/g=
+eneral-76906fbc82f79822625038e272fa3893.png&quot;) 0px -438px no-repeat; he=
+ight: 21px; vertical-align: middle; width: 21px; opacity: 0.55;"></div><div=
+ id=3D"gmail-:q1" class=3D"gmail-T-I gmail-J-J5-Ji gmail-T-I-Js-Gs gmail-aa=
+p gmail-T-I-awG gmail-T-I-ax7 gmail-L3" tabindex=3D"0" style=3D"display:inl=
+ine-block;border-radius:0px 2px 2px 0px;font-size:11px;font-weight:bold;tex=
+t-align:center;white-space:nowrap;margin-right:0px;height:27px;line-height:=
+27px;min-width:21px;outline:0px;padding:0px;background-color:rgb(245,245,24=
+5);color:rgb(68,68,68);border:1px solid rgba(0,0,0,0.1)"><img class=3D"gmai=
+l-hA gmail-T-I-J3" src=3D"https://mail.google.com/mail/u/0/images/cleardot.=
+gif" alt=3D"" style=3D"background: url(&quot;https://ssl.gstatic.com/mail/s=
+prites/general-76906fbc82f79822625038e272fa3893.png&quot;) 0px -564px no-re=
+peat; height: 21px; width: 21px; vertical-align: middle; opacity: 0.55;"></=
+div></td></tr><tr class=3D"gmail-acZ gmail-xD" style=3D"height:16px"><td co=
+lspan=3D"3" style=3D"font-family:arial,sans-serif;margin:0px"><table cellpa=
+dding=3D"0" class=3D"gmail-cf gmail-adz" style=3D"border-collapse:collapse;=
+table-layout:fixed;white-space:nowrap;width:894px"><tbody><tr><td class=3D"=
+gmail-ady" style=3D"font-family:arial,sans-serif;margin:0px;overflow:hidden=
+;text-overflow:ellipsis;white-space:nowrap"><div class=3D"gmail-iw gmail-aj=
+w" style=3D"overflow:hidden;white-space:nowrap;max-width:92%;display:inline=
+-block"><span class=3D"gmail-hb" style=3D"vertical-align:top;color:rgb(119,=
+119,119)">to<span>=C2=A0</span><b><span dir=3D"ltr" name=3D"an463" class=3D=
+"gmail-g2 gmail-ac2" style=3D"color:rgb(34,34,34);font-weight:normal">an463=
+</span></b>,<span>=C2=A0</span><b><span dir=3D"ltr" name=3D"Alister" class=
+=3D"gmail-g2 gmail-ac2" style=3D"color:rgb(34,34,34);font-weight:normal">Al=
+ister</span></b>,<span>=C2=A0</span><span dir=3D"ltr" name=3D"me" class=3D"=
+gmail-g2">me</span></span></div><div class=3D"gmail-ajy" tabindex=3D"0" sty=
+le=3D"display:inline-block;margin-left:5px;vertical-align:top"><img class=
+=3D"gmail-ajz" id=3D"gmail-:q0" src=3D"https://mail.google.com/mail/u/0/ima=
+ges/cleardot.gif" alt=3D"" style=3D"background: url(&quot;//ssl.gstatic.com=
+/ui/v1/icons/mail/skinnable/skinnable_ltr_light_1x.png&quot;) -60px -100px =
+no-repeat; cursor: pointer; padding: 0px 0px 1px; vertical-align: bottom; h=
+eight: 12px; width: 12px;"></div></td></tr></tbody></table></td></tr></tbod=
+y></table></div><div id=3D"gmail-:pm" style=3D"color:rgb(34,34,34);font-fam=
+ily:arial,sans-serif;font-size:medium;font-style:normal;font-variant-ligatu=
+res:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;t=
+ext-align:start;text-indent:0px;text-transform:none;white-space:normal;word=
+-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initia=
+l;text-decoration-color:initial"><div class=3D"gmail-qQVYZb"></div><div cla=
+ss=3D"gmail-utdU2e"></div><div class=3D"gmail-btm"></div></div><div class=
+=3D"gmail-aHl" style=3D"color:rgb(34,34,34);font-family:arial,sans-serif;fo=
+nt-size:medium;font-style:normal;font-variant-ligatures:normal;font-variant=
+-caps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-in=
+dent:0px;text-transform:none;white-space:normal;word-spacing:0px;background=
+-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color=
+:initial"></div><div id=3D"gmail-:pz" tabindex=3D"-1" style=3D"color:rgb(34=
+,34,34);font-family:arial,sans-serif;font-size:medium;font-style:normal;fon=
+t-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-=
+spacing:normal;text-align:start;text-indent:0px;text-transform:none;white-s=
+pace:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decorat=
+ion-style:initial;text-decoration-color:initial"></div><div id=3D"gmail-:po=
+" class=3D"gmail-ii gmail-gt" style=3D"font-size:12.8px;direction:ltr;margi=
+n:5px 15px 0px 0px;padding-bottom:5px;color:rgb(34,34,34);font-family:arial=
+,sans-serif;font-style:normal;font-variant-ligatures:normal;font-variant-ca=
+ps:normal;font-weight:400;letter-spacing:normal;text-align:start;text-inden=
+t:0px;text-transform:none;white-space:normal;word-spacing:0px;background-co=
+lor:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:in=
+itial"><div id=3D"gmail-:pn" class=3D"gmail-a3s gmail-aXjCH gmail-m160fe432=
+5b5ec5e4" style=3D"overflow:hidden"><div lang=3D"EN-GB"><div class=3D"gmail=
+-m_-4078262968126412748WordSection1"><p class=3D"MsoNormal" style=3D"margin=
+:0px"><span style=3D"font-size:11pt;font-family:Calibri,sans-serif;color:rg=
+b(31,73,125)">Hi E J!=C2=A0<u></u><u></u></span></p><p class=3D"MsoNormal" =
+style=3D"margin:0px"><span style=3D"font-size:11pt;font-family:Calibri,sans=
+-serif;color:rgb(31,73,125)"><u></u>=C2=A0<u></u></span></p><p class=3D"Mso=
+Normal" style=3D"margin:0px"><span style=3D"font-size:11pt;font-family:Cali=
+bri,sans-serif;color:rgb(31,73,125)">Glad to hear from you, we=E2=80=99ve g=
+ot a number of crews out this term and could really use some help with the =
+coaching.=C2=A0 We pay =C2=A325 per session<u></u><u></u></span></p><p clas=
+s=3D"MsoNormal" style=3D"margin:0px"><span style=3D"font-size:11pt;font-fam=
+ily:Calibri,sans-serif;color:rgb(31,73,125)"><u></u>=C2=A0<u></u></span></p=
+><p class=3D"MsoNormal" style=3D"margin:0px"><span style=3D"font-size:11pt;=
+font-family:Calibri,sans-serif;color:rgb(31,73,125)">Al and I are intending=
+ to cover M1 and M2, but we have two competing M3 crews (a and b)=C2=A0 who=
+ will both be looking to get on for Lent bumps this year.=C2=A0 This should=
+ total a minimum 4 or more water sessions.=C2=A0 Anton, the men=E2=80=99s C=
+aptain =C2=A0should be in touch with their schedule and names etc.=C2=A0 Pl=
+ease let him know if you have any times you CANNOT do.<u></u><u></u></span>=
+</p><p class=3D"MsoNormal" style=3D"margin:0px"><span style=3D"font-size:11=
+pt;font-family:Calibri,sans-serif;color:rgb(31,73,125)"><u></u>=C2=A0<u></u=
+></span></p><p class=3D"MsoNormal" style=3D"margin:0px"><span style=3D"font=
+-size:11pt;font-family:Calibri,sans-serif;color:rgb(31,73,125)">Best Wishes=
+<u></u><u></u></span></p><p class=3D"MsoNormal" style=3D"margin:0px"><span =
+style=3D"font-size:11pt;font-family:Calibri,sans-serif;color:rgb(31,73,125)=
+"><u></u>=C2=A0<u></u></span></p><p class=3D"MsoNormal" style=3D"margin:0px=
+"><span style=3D"font-size:11pt;font-family:Calibri,sans-serif;color:rgb(31=
+,73,125)"><span class=3D"gmail-il">Kate</span><u></u><u></u></span></p><p c=
+lass=3D"MsoNormal" style=3D"margin:0px"><span style=3D"font-size:11pt;font-=
+family:Calibri,sans-serif;color:rgb(31,73,125)"><u></u>=C2=A0</span></p></d=
+iv></div></div></div><br></div></div><div class=3D"gmail_extra"><br><div cl=
+ass=3D"gmail_quote">On Tue, Apr 10, 2018 at 8:20 PM, M. Apsley <span dir=3D=
+"ltr">&lt;<a href=3D"mailto:ma616@cam.ac.uk" target=3D"_blank">ma616@cam.ac=
+.uk</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=3D"mar=
+gin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><u></u>
+<div style=3D"font-size:10pt;font-family:Arial,Helvetica,sans-serif">
+<p>Dear EJ,</p>
+<p>Many apologies for the delay we have had in paying for coaching, but I h=
+ave just transferred =C2=A3280 =3D 14 sessions at =C2=A320 per session. Ref=
+erence Christ&#39;s coaching.=C2=A0 Please let me know if there are any pro=
+blems.</p>
+<p>Many thanks for all your coaching,</p>
+<p>Miriam</p>
+<p>-------- Original Message --------</p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>Subject:</th>
+<td>Re: payment for lent term coaching</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>Date:</th>
+<td>2018-04-10 10:35</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>From:</th>
+<td>Anton Nilsson &lt;<a href=3D"mailto:an463@cam.ac.uk" target=3D"_blank">=
+an463@cam.ac.uk</a>&gt;</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>To:</th>
+<td>&quot;M. Apsley&quot; &lt;<a href=3D"mailto:ma616@cam.ac.uk" target=3D"=
+_blank">ma616@cam.ac.uk</a>&gt;</td>
+</tr>
+</tbody>
+</table>
+<p>=C2=A0</p>
+
+<p>Kate just confirmed, 20=C2=A3 a session! Thanks for sorting</p>
+<div>=C2=A0</div>
+<div>Anton<br>
+<div><br>
+<blockquote type=3D"cite" style=3D"padding-left:5px;border-left:#1010ff 2px=
+ solid;margin-left:5px">
+<div>9 apr. 2018 kl. 10:32 skrev Anton Nilsson &lt;<a href=3D"mailto:an463@=
+cam.ac.uk" target=3D"_blank">an463@cam.ac.uk</a>&gt;:</div>
+<br class=3D"m_-8291193755747798336Apple-interchange-newline">
+<div>
+<div style=3D"word-wrap:break-word;line-break:after-white-space">Hi,
+<div>=C2=A0</div>
+<div>Yes sorry I missed the last email. He counted to 14 sessions for m2 an=
+d m3 and that sounds about right. I can&#39;t remember what he&#39;s fee is=
+ though so have CCed Kate as well. I believe it&#39;s 20 pounds a session b=
+ut please confirm that Kate. Banking details is in a previous email. Once K=
+ate confirms fee it would be great if we could sort payment ASAP since I mi=
+ssed the email, sorry about that again.</div>
+<div>=C2=A0</div>
+<div>All the best,</div>
+<div>=C2=A0</div>
+<div>Anton<br>
+<div><br>
+<blockquote type=3D"cite" style=3D"padding-left:5px;border-left:#1010ff 2px=
+ solid;margin-left:5px">
+<div>7 apr. 2018 kl. 21:21 skrev M. Apsley &lt;<a href=3D"mailto:ma616@cam.=
+ac.uk" target=3D"_blank">ma616@cam.ac.uk</a>&gt;:</div>
+<br class=3D"m_-8291193755747798336Apple-interchange-newline">
+<div>
+<div style=3D"font-size:10pt;font-family:Arial,Helvetica,sans-serif">
+<p>Hi Anton,</p>
+<p>Don&#39;t think I ever got an invoice for this. Do you know where it got=
+ to?</p>
+<p>Miriam</p>
+<p>-------- Original Message --------</p>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>Subject:</th>
+<td>Re: payment for lent term coaching</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>Date:</th>
+<td>2018-03-19 20:21</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>From:</th>
+<td>Anton Nilsson &lt;<a href=3D"mailto:an463@cam.ac.uk" target=3D"_blank">=
+an463@cam.ac.uk</a>&gt;</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>To:</th>
+<td>EJ McCarthy &lt;<a href=3D"mailto:john3mccarthy@gmail.com" target=3D"_b=
+lank">john3mccarthy@gmail.com</a>&gt;</td>
+</tr>
+<tr><th align=3D"right" valign=3D"baseline" nowrap>Copy:</th>
+<td><a href=3D"mailto:ma616@cam.ac.uk" target=3D"_blank">ma616@cam.ac.uk</a=
+></td>
+</tr>
+</tbody>
+</table>
+<div>=C2=A0</div>
+<div>=C2=A0</div>
+<div>Thats perfect! Just send me over your log over hours, I trust you! I&#=
+39;ll just swing it by Ben and Seb as well since they&#39;ve been coordinat=
+ing most sessions. Hope that works!</div>
+<div>=C2=A0</div>
+<div>Anton</div>
+<div><br>19 mars 2018 kl. 20:45 skrev EJ McCarthy &lt;<a href=3D"mailto:joh=
+n3mccarthy@gmail.com" target=3D"_blank">john3mccarthy@gmail.com</a>&gt;:<br=
+><br></div>
+<blockquote style=3D"padding-left:5px;border-left:#1010ff 2px solid;margin-=
+left:5px">
+<div>
+<div dir=3D"ltr">Hey Anton,
+<div>=C2=A0 =C2=A0I&#39;ll just add Miriam to the email chain. Bank details=
+ are Barclays sort code: 20-17-19; account: 80205095. Please let me know wh=
+at you all have as hours on file for me and ill cross check it against what=
+ I&#39;ve got logged. Cheers and please let me know if there is anything el=
+se that needs doing on my end. Best.</div>
+<div>-EJ</div>
+</div>
+<div class=3D"gmail_extra"><br>
+<div class=3D"gmail_quote">On Sat, Mar 17, 2018 at 4:59 PM, Anton Nilsson <=
+span>&lt;<a href=3D"mailto:an463@cam.ac.uk" target=3D"_blank">an463@cam.ac.=
+uk</a>&gt;</span> wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">Hey EJ,<br><br> You can run it through me or=
+ directly with out treasurer Miriam (<a href=3D"mailto:ma616@cam.ac.uk" tar=
+get=3D"_blank">ma616@cam.ac.uk</a>). Let me know if you have more questions=
+!<br><br> Best wishes,<br><br> Anton<br>
+<div class=3D"m_-8291193755747798336HOEnZb">
+<div class=3D"m_-8291193755747798336h5"><br> &gt; 16 mars 2018 kl. 19:04 sk=
+rev EJ McCarthy &lt;<a href=3D"mailto:john3mccarthy@gmail.com" target=3D"_b=
+lank">john3mccarthy@gmail.com</a>&gt;:<br> &gt;<br> &gt; hey whats up anton=
+,<br> &gt;=C2=A0 =C2=A0 =C2=A0just wanted to touch base and inquire who i s=
+peak with regards to payment for coaching this past term. best regards.<br>=
+ &gt; -ej<br><br></div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote></div><br></div>
+
+--001a11451db41fe962056990fdac--

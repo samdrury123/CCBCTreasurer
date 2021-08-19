@@ -1,0 +1,95 @@
+Return-Path: <stephenmatthew@hotmail.com>
+Received: from ppsw-30.csi.cam.ac.uk (ppsw-30-intramail.csi.cam.ac.uk [192.168.128.130])
+	 by cyrus-2b.csi.private.cam.ac.uk (Cyrus v2.4.20) with LMTPA;
+	 Mon, 11 Jun 2018 17:06:19 +0100
+X-Sieve: CMU Sieve 2.4
+X-Cam-SpamDetails: score 0.7 from SpamAssassin-3.4.1-1833258 
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *       (stephenmatthew[at]hotmail.com)
+ *  0.9 FORGED_HOTMAIL_RCVD2 hotmail.com 'From' address, but no 'Received:'
+ * -0.1 BAYES_00 BODY: Bayes spam probability is 0 to 1%
+ *      [score: 0.0000]
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+ *      author's domain
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [40.92.2.51 listed in list.dnswl.dnsbl.ja.net]
+X-Cam-ScannerInfo: http://help.uis.cam.ac.uk/email-scanner-virus
+Received: from mail-oln040092002051.outbound.protection.outlook.com ([40.92.2.51]:15136 helo=NAM01-SN1-obe.outbound.protection.outlook.com)
+	by ppsw-30.csi.cam.ac.uk (mx.cam.ac.uk [131.111.8.146]:25)
+	with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	id 1fSPKl-0009VB-cz (Exim 4.91) for ma616@cam.ac.uk
+	(return-path <stephenmatthew@hotmail.com>); Mon, 11 Jun 2018 17:06:19 +0100
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=usTfMzgBljqE/MHIaybAuGWemnN5SM7RDBOX/YE1EV4=;
+ b=Kwme3RV4BD6M6eFWiKhKGS3j4vQxM8gJWBDSod9cIVZEXrriU7kcdC++x/KkpQOHoOV8fyUulbj+TsEW9d3nGhX2aohMPS1yI94xmjwc6wN5MvkilmDJfzI/HV9B5rq9q9AAIAlSecp2oB6VfuvXNteUZsUmntYowZWZntQILI22cLDFOLV9K9GNka/5uzyatSdd8n17zp1iMXyKoLt1dYYbTYHmVDbzA9GXj2wVJyxkNvEpNDVEu/AGeRLYEvwQ9dKUe2Btb0graYiPaU0fDMAllbn2BtobWFFWXJynESxkH/SmxBtKnZ9KlgHPSssPrZ+1xR0HUsIyxHztdGCekg==
+Received: from SN1NAM01FT054.eop-nam01.prod.protection.outlook.com
+ (10.152.64.60) by SN1NAM01HT194.eop-nam01.prod.protection.outlook.com
+ (10.152.65.13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.863.11; Mon, 11 Jun
+ 2018 16:06:07 +0000
+Received: from CY4PR22MB0040.namprd22.prod.outlook.com (10.152.64.51) by
+ SN1NAM01FT054.mail.protection.outlook.com (10.152.65.228) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.863.11 via Frontend Transport; Mon, 11 Jun 2018 16:06:07 +0000
+Received: from CY4PR22MB0040.namprd22.prod.outlook.com
+ ([fe80::95ad:7d63:4d23:431b]) by CY4PR22MB0040.namprd22.prod.outlook.com
+ ([fe80::95ad:7d63:4d23:431b%3]) with mapi id 15.20.0841.019; Mon, 11 Jun 2018
+ 16:06:07 +0000
+From: Stephen Matthew <stephenmatthew@hotmail.com>
+To: "M. Apsley" <ma616@cam.ac.uk>
+Subject: Coaching Invoice
+Thread-Topic: Coaching Invoice
+Thread-Index: AQHUAZ1MTa02KSoZPUKUTQKJ7xl8gA==
+Date: Mon, 11 Jun 2018 16:06:07 +0000
+Message-ID: <CY4PR22MB0040FF1739F0B4718D91A03FC8780@CY4PR22MB0040.namprd22.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker: OriginalChecksum:89A348FA5205D120B65A9125D29633F28127F20B03D786CCA24D8CB1715FEADD;UpperCasedChecksum:517D89488BF25D5AA9C81A125434FFAA47D1AB90F6E2BF6A3BDCD26ED9EF4984;SizeAsReceived:6980;Count:44
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [rGwye182C3vF3fYA1nxaG68Vsvfbv1ZBV4zOJ0rYlyITiWDfM8SZvOn8l2C/Fh5rJHfwVibqzfU=]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;SN1NAM01HT194;7:adLboUPi2jyRODjTSWmYsgotZkXVlkppJUcxfoClwoxAybnHMsYRGtVW9lpjGhvxl8RwmAcuva4SZXfcZK/sgSrJfU+vPeDKCSoKwrAQRAGeYFwH4OcGz44NwYrVOgh7F0D6CJEX4MZx/PM7J/LYbaVnR16reR46HSm4+rDtvcsLzRVX+4qSR9Dhew1sVoCssz9yB7fpz4a/uVbs6DbDN9n0HfHY96Q3cGiR4OwHeWR3uZVrEY6HOjQq3/pxjpra
+x-incomingheadercount: 44
+x-eopattributedmessage: 0
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:(7020095)(201702061078)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031324274)(2017031323274)(2017031322404)(1603101448)(1601125500)(1701031045);SRVR:SN1NAM01HT194;
+x-ms-traffictypediagnostic: SN1NAM01HT194:
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(444000031);SRVR:SN1NAM01HT194;BCL:0;PCL:0;RULEID:;SRVR:SN1NAM01HT194;
+x-forefront-prvs: 070092A9D3
+x-forefront-antispam-report: SFV:NSPM;SFS:(7070007)(189003)(199004)(81156014)(6436002)(97736004)(7116003)(2900100001)(5660300001)(99286004)(73972006)(106356001)(6346003)(105586002)(82202002)(6916009)(6506007)(558084003)(102836004)(7696005)(20460500001)(86362001)(486006)(87572001)(3480700004)(8936002)(83332001)(3660700001)(3280700002)(104016004)(476003)(14454004)(8676002)(305945005)(5250100002)(33656002)(46003)(25786009)(74316002)(9686003)(221733001)(55016002)(68736007)(15852004);DIR:OUT;SFP:1901;SCL:1;SRVR:SN1NAM01HT194;H:CY4PR22MB0040.namprd22.prod.outlook.com;FPR:;SPF:None;PTR:InfoNoRecords;MX:1;A:1;LANG:;
+received-spf: None (protection.outlook.com: hotmail.com does not designate
+ permitted sender hosts)
+authentication-results: spf=none (sender IP is )
+ smtp.mailfrom=stephenmatthew@hotmail.com; 
+x-microsoft-antispam-message-info: BFPxW/S8TOp5RflgghzkUSTMjutF0cs5Xt+zZ5OXSaXhD0AdsgHUe0naU7t1E6OgVOAPjLZp2IHR7yBQxio5SaCnFOjO88oCjwNmglIFFYzxl/Uj+Xkk8dYz8uB8dwDPWW/Kahs44K1W5wP9ClkfVmSHjz9+MiiOK2mIvfIVrCpOQt+rmffABmNO95eKoc+M
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-MS-Office365-Filtering-Correlation-Id: 646034a9-b2be-48bc-491b-08d5cfb53d96
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 24fd1209-d934-423e-a578-ee886993c07f
+X-MS-Exchange-CrossTenant-Network-Message-Id: 646034a9-b2be-48bc-491b-08d5cfb53d96
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 24fd1209-d934-423e-a578-ee886993c07f
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Jun 2018 16:06:07.1071
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SN1NAM01HT194
+
+
+Hello,
+These are the outings I=92ve coached this term:
+April, 18, 19, 20, 26 and 29th
+May, 7, 11, 13, 15, 21, 23, 24th
+
+That=92s 12 outings at =A330, so =A3360.
+
+Many thanks
+Stephen =

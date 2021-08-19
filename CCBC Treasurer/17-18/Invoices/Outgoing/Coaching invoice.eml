@@ -1,0 +1,85 @@
+Return-Path: <stephenmatthew@hotmail.com>
+Received: from ppsw-31.csi.cam.ac.uk (ppsw-31-intramail.csi.cam.ac.uk [192.168.128.131])
+	 by cyrus-2a.csi.private.cam.ac.uk (Cyrus v2.4.20) with LMTPA;
+	 Wed, 28 Feb 2018 10:49:59 +0000
+X-Sieve: CMU Sieve 2.4
+X-Cam-SpamDetails: score 0.7 from SpamAssassin-3.4.1-1825535 
+ *  0.9 FORGED_HOTMAIL_RCVD2 hotmail.com 'From' address, but no 'Received:'
+ *  0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ *       (stephenmatthew[at]hotmail.com)
+ * -0.1 BAYES_00 BODY: Bayes spam probability is 0 to 1%
+ *      [score: 0.0000]
+ * -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ * -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from
+ *      author's domain
+ *  0.1 DKIM_SIGNED Message has a DKIM or DK signature, not necessarily
+ *      valid
+ * -0.0 RCVD_IN_DNSWL_NONE RBL: Sender listed at http://www.dnswl.org/, no
+ *      trust
+ *      [40.92.9.46 listed in list.dnswl.dnsbl.ja.net]
+X-Cam-ScannerInfo: http://help.uis.cam.ac.uk/email-scanner-virus
+Received: from mail-oln040092009046.outbound.protection.outlook.com ([40.92.9.46]:55208 helo=NAM04-BN3-obe.outbound.protection.outlook.com)
+	by ppsw-31.csi.cam.ac.uk (mx.cam.ac.uk [131.111.8.147]:25)
+	with esmtps (TLSv1.2:ECDHE-RSA-AES256-SHA384:256)
+	id 1eqzJ8-000X9a-Ke (Exim 4.90_1) for ma616@cam.ac.uk
+	(return-path <stephenmatthew@hotmail.com>); Wed, 28 Feb 2018 10:49:59 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1; h=From:Date:Subject:Message-ID:Content-Type:MIME-Version;
+ bh=4Bxxm+JiiYzEmTSBPTe/n5AR1rHvME5xc8FFU5QqJJw=;
+ b=H3YAW8njH7ovUuNMANTJ+5qTNGw+bu+pM5LMWSTsRUU25Rq14Gqgfw+OPuYUp2FlVQY3NwgWBr7WXqsOimf/wSvkYARaOLniVOvu/+++rrWF9ZkLnzds+orBiMY/g1GADCiZWTZDdRmRLrLgLS9bKSuKFOZ9JpheZwUN1EKL/c3+2ZVaRobZUTFjoK3WL3P5MpdfhsK4N5cxMALY54ljykcm9eklc/X4IKAOzXH5Igh63lHNuNTwvEUMMD/qgFcvXTNFghtC2LbIDtpznslv5GGovJbUPmw9aWRJT2k3NkwjA2J7hFsz1V+7PbREwmspPQDE5tGj/K+9V2rG9Vm4FQ==
+Received: from CO1NAM04FT038.eop-NAM04.prod.protection.outlook.com
+ (10.152.90.57) by CO1NAM04HT229.eop-NAM04.prod.protection.outlook.com
+ (10.152.91.43) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id 15.20.506.19; Wed, 28
+ Feb 2018 10:49:46 +0000
+Received: from DM5PR22MB0522.namprd22.prod.outlook.com (10.152.90.58) by
+ CO1NAM04FT038.mail.protection.outlook.com (10.152.91.26) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256) id
+ 15.20.506.19 via Frontend Transport; Wed, 28 Feb 2018 10:49:46 +0000
+Received: from DM5PR22MB0522.namprd22.prod.outlook.com
+ ([fe80::787b:ebc9:3255:e32c]) by DM5PR22MB0522.namprd22.prod.outlook.com
+ ([fe80::787b:ebc9:3255:e32c%17]) with mapi id 15.20.0527.021; Wed, 28 Feb
+ 2018 10:49:46 +0000
+From: Stephen Matthew <stephenmatthew@hotmail.com>
+To: "M. Apsley" <ma616@cam.ac.uk>
+Subject: Coaching invoice 
+Thread-Topic: Coaching invoice 
+Thread-Index: AQHTsIDh2JJhKZ7nE0aQ1kVNX9IpxQ==
+Date: Wed, 28 Feb 2018 10:49:46 +0000
+Message-ID: <DM5PR22MB052210378681E66878B87FF5C8C70@DM5PR22MB0522.namprd22.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker: OriginalChecksum:CCECCBB8685CE56ACA12794858386862206DF5F96D4522A69AE3179F7B0D236E;UpperCasedChecksum:23A08BBC1CD8AB9AA4B3339C8E0D84C9120A434F167E5A4DB122FB378508A162;SizeAsReceived:6810;Count:44
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [VELY4HyCeNdnnLYqLebveX9F9aZDCKof]
+x-ms-publictraffictype: Email
+x-microsoft-exchange-diagnostics: 1;CO1NAM04HT229;6:F6PL7JYeEYYpD1iQGySPDqSOrnDrc/uVFypT5uCY4/QiY8jjR4g5hKV5N7qUi5l7G/CjZ96cr2Lm8yBqTNHZcPUhLbBgKeHnM3CMhr0vFomayCLedTIY9Gf9jo7Sh/UTpp2nVMjuA1xvnF+vQL/yI/V/wFP+w5+yl0aZ6efD5pj22vg2c3WoX33+BhX25+7rPMfEQ9DsfqEmRTm5ro9glsvc6qDRmv+HghPikyrhtiP4pEeuXiJFIAL13KQ3lNCtDuov+flBFDbbrVWBAoEvkw2ZK7VP1x3JfwASgc2ijOpHScqpGyA7bcqG4p7x/JS0+h/tX0nr/btjv1cUFmVDrV/WXHhRRkrLRD2bq6X2ZMU=;5:HibSPy2KjvUzDfv7QCAcM6jDfgwTsBNRwZAnQW/9g4NyDVfUl0pms2HSOUMm4Egj4SIW7oC1RtQBNehMZn8Zi6BP2lGu6TU5BTFBnIw1idq+O7CH8loj05+Sj3gntoiWSVi6I6J46gZtX0JumV0qkZQd5XeIZa0ebp8o0k0YpJg=;24:m145hvuvIzKYVvaaeSmvbqqQWb4NJ7uN+7fmM/k/y2SNpGvPKvNt4Uh2sq9sqbAN5YyyM5SGC0Aqt5uekrEl00ti6DwHcyzDWQcY1Ol5T3Y=;7:d5TrovBBplqjOaFCnJbD9ZIf4cFRuQqHlQy/8UZsAZiwf6I5OtVrQqvMX6J+od3XNNlthv2YP5M9sfusPB6Pf2p6BMQXMiYTKyVBwEdGq2m3Q+1je5poZb02MNAUVC9X1Rr7Gc24PttcMM5Vh0aqIW22NW1neqZ15uee/xqAZTwQpfymmfOB4Cx+XybMLySX79k76nYLOrxzePW11n7whQb8EURmJhXpA2XEpDO/IuKRMD1WrIxzKk/l8Se7XTJC
+x-incomingheadercount: 44
+x-eopattributedmessage: 0
+x-microsoft-antispam: UriScan:;BCL:0;PCL:0;RULEID:(7020095)(201702061078)(5061506573)(5061507331)(1603103135)(2017031320274)(2017031324274)(2017031323274)(2017031322404)(1601125374)(1603101448)(1701031045);SRVR:CO1NAM04HT229;
+x-ms-traffictypediagnostic: CO1NAM04HT229:
+x-ms-office365-filtering-correlation-id: 26c5fcfa-63b8-432a-65c2-08d57e98fbdf
+x-exchange-antispam-report-cfa-test: BCL:0;PCL:0;RULEID:(444000031);SRVR:CO1NAM04HT229;BCL:0;PCL:0;RULEID:;SRVR:CO1NAM04HT229;
+x-forefront-prvs: 0597911EE1
+x-forefront-antispam-report: SFV:NSPM;SFS:(7070007)(98901004);DIR:OUT;SFP:1901;SCL:1;SRVR:CO1NAM04HT229;H:DM5PR22MB0522.namprd22.prod.outlook.com;FPR:;SPF:None;LANG:;
+spamdiagnosticoutput: 1:99
+spamdiagnosticmetadata: NSPM
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 26c5fcfa-63b8-432a-65c2-08d57e98fbdf
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Feb 2018 10:49:46.8018
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CO1NAM04HT229
+
+SGVsbG8gDQpJIGhvcGUgYWxsIGlzIHdlbGwuDQpUaGVzZSBhcmUgdGhlIG91dGluZ3MgSeKAmXZl
+IGNvYWNoZWQgdGhpcyB0ZXJtLg0KSmFuOiAxOSwyMCwyMiwyNCwyNywzMXN0DQpGZWI6IDEsMyw1
+LDcsOCw5LDEwLDExLDE0LDE3LDIxLDIyLDI0LDI1LDI2dGgNCg0KVGhhdOKAmXMgMjEgb3V0aW5n
+cyBhdCDCozMwIG1ha2luZyDCozYzMC4gDQoNCkkgZ3Vlc3NpbmcgdGhpbmdzIGFyZSBnb2luZyB3
+ZWxsIHdpdGggdGhlIGxpZ2h0d2VpZ2h0cyBhcyB5b3XigJlyZSBub3QgaW4gdGhlIENocmlzdOKA
+mXMgY3Jldy4gR29vZCBsdWNrISDwn5iADQoNCkNoZWVycyANClN0ZXBoZW4g
